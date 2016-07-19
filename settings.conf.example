@@ -1,0 +1,105 @@
+# this file is for any details the app needs to deploy
+# eg. db connection info, storage locations, etc
+# this is a place to keep secrets. Adding to .gitignore 
+
+############################
+# DxSter configuration file #
+############################
+
+# -------------------------------------------------------------------------------
+# --- section_example
+# -------------------------------------------------------------------------------
+# REDCap Server URI which should be used for connecting to REDCap
+# Required parameter
+#redcap_uri = https://www.hcvtargetrc.org/api/
+#redcap_uri = https://dev.hcvtargetrc.org/api/
+#redcap_uri = http://localhost:8998/redcap/api/
+
+#redcap_server = https://www.hcvtargetrc.org/api/
+#redcap_server = https://dev.hcvtargetrc.org/api/
+#redcap_server = http://localhost:8998/redcap/api/
+
+# REDCap token to login to REDCap
+# Required parameter
+# token = 1234567890
+
+
+
+# Specify whether to verify the REDCap server's SSL certificate
+#verify_ssl = True
+#verify_ssl = True
+
+# --- /section_redcap
+
+
+# -------------------------------------------------------------------------------
+# --- section_redi_emails
+# -------------------------------------------------------------------------------
+# smtp host details
+# Required parameters
+#smtp_host_for_outbound_mail = smtp.ufl.edu
+#smtp_port_for_outbound_mail = 25
+
+# Option to specify whether to send email or not. Specify Y for yes and N for No
+# Optional parameter
+#send_email = True
+
+# Email of the report sender
+# Required if send_email is set to Y
+#sender_email = please-do-not-reply@ufl.edu
+
+# Email of the REDI report receiver.
+# Required if send_email is set to Y
+#receiver_email = cts-it-hcv@ctsi.ufl.edu
+
+
+# Warning email options. Email of the sender
+# Required parameter
+#redcap_support_sender_email = please-do-not-reply@ufl.edu
+
+# Email of the receiver.
+# for multiple addresses, put a space between each address.
+# Required parameter
+#redcap_support_receiver_email = cts-it-hcv@ctsi.ufl.edu
+
+
+# Name of your project
+# Required parameter
+#project = DxSter 0.x.x
+
+# name of the report file in xml format, which will be stored at this location.
+# Optional parameter
+#report_file_path = report.xml
+
+# name of the report file in html format, which will be stored at this location.
+# Optional parameter
+#report_file_path2 = report.html
+
+# --- /section_redi_emails
+# -------------------------------------------------------------------------------
+
+# Optional parameter
+#input_date_format = %Y-%m-%d
+
+# Optional parameter
+#output_date_format = %Y-%m-%d
+# -------------------------------------------------------------------------------
+
+# -------------------------------------------------------------------------------
+# --- section_misc
+# -------------------------------------------------------------------------------
+# The SQLite database file path where we store md5 sums of the input files
+# Optional parameter.
+#batch_info_database = redi.db
+
+# If the md5 sum of the input file does not change then generate a warning
+# after a specific number of days
+# Optional parameter
+#batch_warning_days = 365
+
+# Rate limiter
+# Optional parameter
+#rate_limiter_value_in_redcap = 600
+# --- /section_misc
+# -------------------------------------------------------------------------------
+
