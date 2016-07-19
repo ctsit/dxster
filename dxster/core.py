@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+  _____        _____ _            
+ |  __ \      / ____| |           
+ | |  | |_  __ (___ | |_ ___ _ __ 
+ | |  | \ \/ /\___ \| __/ _ \ '__|
+ | |__| |>  < ____) | |_  __/ |   
+ |_____//_/\_\_____/ \__\___|_| 
+
 Copyright 2016 Christopher P. Barnes <senrabc@gmail.com>
 Copyright 2016 Kevin Hanson <kshanson@ufl.edu>
 
