@@ -1,2 +1,2 @@
 # dxster
-Alzheimer's disease Algorithmic Diagnostic Tool
+DxSter, the Alzheimer's Algortihmic Diagnostic Helper.
