@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-  _____        _____ _            
- |  __ \      / ____| |           
- | |  | |_  __ (___ | |_ ___ _ __ 
+  _____        _____ _
+ |  __ \      / ____| |
+ | |  | |_  __ (___ | |_ ___ _ __
  | |  | \ \/ /\___ \| __/ _ \ '__|
- | |__| |>  < ____) | |_  __/ |   
- |_____//_/\_\_____/ \__\___|_| 
+ | |__| |>  < ____) | |_  __/ |
+ |_____//_/\_\_____/ \__\___|_|
 
 Copyright 2016 Christopher P. Barnes <senrabc@gmail.com>
 Copyright 2016 Kevin Hanson <kshanson@ufl.edu>
@@ -52,6 +52,20 @@ def calc_dxster(CDR_sb, NPDx):
 
     """
 
+    # Initialize AlgDx empty to prevent wrong value returning.
+    AlgDx = ''
     # If ClinicalDx (CDR-sb) = 0-2.0 & NpDx = Normal  then AlgDx = ‘Normal’
     # If ClinicalDx (CDR-sb) = 2.5-4.0 & NpDx = Normal then AlgDx = ‘PreMCI-CDR’
     # If ClinicalDx (CDR-sb) >= 4.5 & NpDx = Normal then AlgDx = ‘Consensus Conference’"
+    if (NPDx=='Normal'):
+        if ((0<=CDR_sb and CDR_sb>=2.0)):
+            AlgDx='Normal'
+        elif ((2.5<=CDR_sb and CDR_sb>=4.0)):
+            AlgDx='PreMCI-CDR'
+        elif (CDR_sb>=4.5):
+            AlgDx='Consensus Conference'
+        else:
+            AlgDx = '' # need better error handling here for condition fallouts
+    else:
+        AlgDx = '' # need better error handling here for condition fallouts
+    return AlgDx
