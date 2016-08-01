@@ -23,6 +23,14 @@
 	margin-bottom: -10px;
 }
 
+.questionduck {
+	width:400px;
+}
+
+.puzzleduck {
+	width:230px
+}
+
 @media only screen and (min-width: 601px) {
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 75px;
