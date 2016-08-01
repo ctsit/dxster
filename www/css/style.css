@@ -1,0 +1,31 @@
+.dxlogo {
+	width: 150px;
+}
+
+.light-blue.lighten-1 {
+    background-color: #834499!important;
+}
+
+.light-blue {
+    background-color: #834499!important;
+}
+
+.section-ltpurple {
+	background-color: #EFE8F7;
+}
+
+.section-purple {
+	background-color: #834499;
+	color: white;
+}
+
+@media only screen and (min-width: 601px) {
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 75px;
+    }
+
+    .dxlogo {
+	width: 190px;
+	padding-top: 3px;
+}
+}
