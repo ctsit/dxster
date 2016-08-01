@@ -1,3 +1,18 @@
+html {
+  line-height: 1.5;
+  font-family: 'Arimo', sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2, h3 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+a {
+    color: #834499;
+}
+
 .dxlogo {
 	width: 150px;
 }
