@@ -22,7 +22,7 @@ a {
 }
 
 .calcborder{
-	
+	margin-bottom: 15px;
 	padding:10px;
 	background-color: #EFE8F7;
 }
@@ -38,6 +38,10 @@ a {
 
 .input-field label.active {
     font-size: 1rem;
+}
+
+.ducksize {
+	width: 100%;
 }
 
 .dxlogo {
