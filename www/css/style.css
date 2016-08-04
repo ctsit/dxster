@@ -13,6 +13,33 @@ a {
     color: #834499;
 }
 
+.btn, .btn-large {
+	background-color:orange;
+}
+
+.btn:hover, .btn-large:hover {
+	background-color:darkorange;
+}
+
+.calcborder{
+	
+	padding:10px;
+	background-color: #EFE8F7;
+}
+
+.dxcalc {
+	max-width:400px;
+	margin: 0 auto;
+}
+
+.font20 {
+	font-size: 20px;
+}
+
+.input-field label.active {
+    font-size: 1rem;
+}
+
 .dxlogo {
 	width: 150px;
 }
@@ -54,5 +81,12 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     .dxlogo {
 	width: 190px;
 	padding-top: 3px;
+}
+	.calcborder{
+	border-color:#834499;
+	border-width: 5px;
+	border-style: solid;
+	padding:50px;
+	margin:75px;
 }
 }
