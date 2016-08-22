@@ -77,6 +77,15 @@ a {
 	width:230px
 }
 
+.calcicon {
+	height:130px;
+	max-width: 100%;
+}
+
+.hidden-line {
+	display:block;
+}
+
 @media only screen and (min-width: 601px) {
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 75px;
@@ -92,5 +101,12 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 	border-style: solid;
 	padding:50px;
 	margin:75px;
+}
+.calcicon {
+	height:300px;
+	margin-top:23px;
+}
+.hidden-line {
+	display:none;
 }
 }
