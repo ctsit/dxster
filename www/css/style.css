@@ -86,6 +86,10 @@ a {
 	display:block;
 }
 
+footer.page-footer {
+     margin-top: 0; 
+}
+
 @media only screen and (min-width: 601px) {
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 75px;
