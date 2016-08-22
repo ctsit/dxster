@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <link rel="icon" href="images/favicon_tsp.png" type="image/png">
+  <link href='https://fonts.googleapis.com/css?family=Arimo|Didact+Gothic' rel='stylesheet' type='text/css'>
+
+  <!--  Scripts-->
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="functions.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<!-- Navigation Menu -->
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img src="images/dxster_logo_tsp_13.png" class="dxlogo" alt="DxSter Logo"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="dxcalc.html">Go to DxSter</a></li>
+        <li><a href="index.html#getcode">Get the Code</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#faqs">FAQ</a></li>
+        <li><a href="index.html#help">Help</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="dxcalc.html">Go to DxSter</a></li>
+        <li><a href="index.html#getcode">Get the Code</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#faqs">FAQ</a></li>
+        <li><a href="index.html#help">Help</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<!-- DxCalc Section -->
+<div class="calcborder">
+  <div class="row">
+    <div class="valign-wrapper">
+      <img src="images/dxcalc.svg" class="valign dxcalc" alt="DxSter Calc">
+    </div>
+<p class="center font20">Alxheimer's Algorithmic Diagnostic Helper</p>
+    <form class="col s12">
+      <div class="row">
+      
+
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Clinical dx</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">Neuro Path dx</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Compute
+          <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+  </div> 
+  </div> <!-- close calcborder  -->
+
+
+<!--   Results Section   -->
+<div class="container">
+  <div class="row center">
+    <div class="col s3 left-align">
+      <img src="images/dxster_logo_tsp_standing.png" class="ducksize" alt="DxSter Duck">
+    </div>
+    <div class="col s9 left-align">
+      
+      <h3>Results</h3>
+      <hr>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer Section -->
+
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l8 s12">
+          <p class="grey-text text-lighten-4">This work has been suppported by the Ed and Ethel Moore Foundation and the Florida Department of Health grand number xxxxxxx.</p>
+
+
+        </div>
+        <div class="col l4 s12">
+          <ul>
+            <li><a class="white-text" href="#!">something@something.com</a></li>
+            <li><a class="white-text" href="#!">DxSter &copy; 2016</a></li>
+            <li><a class="white-text" href="#!">Version 0.0.1</a></li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      This website was designed by <a class="orange-text text-lighten-3" href="https://www.ctsi.ufl.edu/research/study-design-and-analysis/informatics-consulting/" target="blank">CTS-IT</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div data-role="footer" class="nav-glyphish-example ui-footer ui-bar-a" data-position="fixed" id="footerDiv">
+
+</div>
+
+
+  
+
+  </body>
+</html>
