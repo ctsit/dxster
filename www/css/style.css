@@ -1,0 +1,96 @@
+html {
+  line-height: 1.5;
+  font-family: 'Arimo', sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2, h3 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+a {
+    color: #834499;
+}
+
+.btn, .btn-large {
+	background-color:orange;
+}
+
+.btn:hover, .btn-large:hover {
+	background-color:darkorange;
+}
+
+.calcborder{
+	margin-bottom: 15px;
+	padding:10px;
+	background-color: #EFE8F7;
+}
+
+.dxcalc {
+	max-width:400px;
+	margin: 0 auto;
+}
+
+.font20 {
+	font-size: 20px;
+}
+
+.input-field label.active {
+    font-size: 1rem;
+}
+
+.ducksize {
+	width: 100%;
+}
+
+.dxlogo {
+	width: 150px;
+}
+
+.light-blue.lighten-1 {
+    background-color: #834499!important;
+}
+
+.light-blue {
+    background-color: #834499!important;
+}
+
+.section-ltpurple {
+	background-color: #EFE8F7;
+}
+
+.section-purple {
+	background-color: #834499;
+	color: white;
+}
+.hm-img {
+	width:100%;
+	margin-bottom: -10px;
+}
+
+.questionduck {
+	width:400px;
+}
+
+.puzzleduck {
+	width:230px
+}
+
+@media only screen and (min-width: 601px) {
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 75px;
+    }
+
+    .dxlogo {
+	width: 190px;
+	padding-top: 3px;
+}
+	.calcborder{
+	border-color:#834499;
+	border-width: 5px;
+	border-style: solid;
+	padding:50px;
+	margin:75px;
+}
+}
