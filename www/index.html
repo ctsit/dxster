@@ -26,7 +26,8 @@
 
 <!-- Navigation Menu -->
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo"><img src="images/dxster_logo_tsp_13.png" class="dxlogo" alt="DxSter Logo"></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo hide-on-large-only"><img src="images/dxster_logo_tsp_13.png" class="dxlogo" alt="DxSter Logo"></a>
+      <a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down"><img src="images/dxster_logo_03.png" class="dxlogo-sm" alt="DxSter Logo"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#about">About</a></li>
@@ -51,11 +52,11 @@
 
 
 <!-- Header Image Section -->
-  <div class="no-pad-bot" id="index-banner">
+<!--   <div class="no-pad-bot" id="index-banner">
     
       <img class="responsive-img hm-img" src="images/lake-lg.png">
     
-  </div>
+  </div> -->
 
 
 <!-- About Section -->
@@ -130,23 +131,25 @@
         </div>
         <div class="col s12 m6 left-align">
           <h5>How does DxSter work?</h5>
-          <p>Sed mollis periculis conclusionemque an. Id nec mucius fuisset, feugait accommodare eum ad. Aeque putent vix ut, mel illum civibus et.</p>
+          <p>When you go to the DxSter tool (found here <a href="https://ctsit.github.io/dxster/dxcalc.html">https://ctsit.github.io/dxster/dxcalc.html</a>), you will be asked to enter your Clinical dx as well as your Neuro Psychological dx. Based on these two variables, the DxCalc will generate an algorithmic diagnosis for the patient.</p>
+
+          <h5>Where does the ALGDx Algorithm come from?</h5>
+          <p>In 2009 Dr. Ranjan Duara et. al. from Mt. Sinai Medical Center in Miami Florida conducted a study to create an algorithm that could use a combination of the clinical diagnosis and the neuropsychological diagnosis to computationally arrive at a diagnosis with a high degree of accuracy. The traditional consensus diagnosis (ConsDx) of normal cognition, mild cognitive impairment (MCI), and dementia relies on the reconciliation of an informant-based report of cognitive and functional impairment by a physician (PhyDx), and a neuropsychological diagnosis (NPDx). As this procedure may be labor-intensive and influenced by the philosophy and biases of a clinician, the diagnostic algorithm (AlgDx) was developed to identify individuals as cognitively normal, with MCI or dementia.</p>
 
           <h5>What variables are used for calculating the diagnosis?</h5>
-          <p>Sed mollis periculis conclusionemque an. Id nec mucius fuisset, feugait accommodare eum ad. Aeque putent vix ut, mel illum civibus et.</p>
-
-          <h5>What tools were used to create DxSter?</h5>
-          <p>Sed mollis periculis conclusionemque an. Id nec mucius fuisset, feugait accommodare eum ad. Aeque putent vix ut, mel illum civibus et.</p>
+          <p>The AlgDx combines the PhyDx with the NPDx, using a computational algorithm that provides cognitive diagnoses, as defined by the National Alzheimer Coordinating Center/Uniform Data Set (NACC/UDS) nomenclature. Reliability of the AlgDx was assessed in 532 community- dwelling elderly subjects by its concordance with the ConsDx, and association with two biomarkers, medial temporal atrophy (MTA) scores of brain MRI scans, and ApoE-ε4 genotype.</p>
 
         </div>
 
         <div class="col s12 m6 left-align">
-          <h5> Debitis oportere nec ei, quo id doming voluptatibus, cu postea salutandi duo?</h5>
-          <p>Sed mollis periculis conclusionemque an. Id nec mucius fuisset, feugait accommodare eum ad. Aeque putent vix ut, mel illum civibus et.</p>
-          <h5>Sed mollis periculis conclusionemque an?</h5>
-          <p>Sed mollis periculis conclusionemque an. Id nec mucius fuisset, feugait accommodare eum ad. Aeque putent vix ut, mel illum civibus et.</p>
-          <h5>Aeque putent vix ut, mel illm civibus et?</h5>
-          <p>Sed mollis periculis conclusionemque an. Id nec mucius fuisset, feugait accommodare eum ad. Aeque putent vix ut, mel illum civibus et.</p>
+          <h5>What tools were used to create DxSter?</h5>
+          <p>The Algorithmic diagnosis uses a combination of variables to compute the AlgDx. By collaborating with the authors of the algorithm we developed a rules engine that emulates the human interpretation of the physician and neuropsychologist diagnosis. Once the rules engine was developed we utilized the Python programing language to codify the rules engine and DxSter was born.</p>
+          <h5>Can I take DxSter for a test drive?</h5>
+          <p>Yes! The DxSter Alzheimer’s disease Algorithmic Diagnostic Helper is setup as a proof of concept web application and can be found at <a href="https://ctsit.github.io/dxster/dxcalc.html">https://ctsit.github.io/dxster/dxcalc.html</a>. </p>
+          <h5>How do I get DxSter?</h5>
+          <p>The code base is open source can be found at <a href="https://github.com/ctsit/dxster">https://github.com/ctsit/dxster</a>.</p>
+          <h5>How do I use DxSter?</h5> 
+          <p>To use DxSter you will need to download the libraries and integrate them into your own tools. You will need to include Algorithmic diagnosis in your own data sets.</p> 
         </div>
       </div>
     </div>
@@ -161,7 +164,8 @@
         <div class="col s12 left-align">
           <hr>
           <h3>Examples</h3>
-          <p>TBD text goes here. To be written by Chris.</p>
+          <h5>HTML & Javascript implementation DxSter calculator</h5>
+          <h5>Bash & Python with CSV test data set script example</h5>
           
         </div>
       </div>
@@ -177,18 +181,15 @@
         <div class="col s12 left-align">
           <hr>
           <h3>How can you help?</h3>
-          <p>Sed mollis periculis conclusionemque an. Id nec mucius fuisset, feugait accommodare eum ad. Aeque putent vix ut, mel illum civibus et.</p>
+          <p>DxSter has been a labor of love and we want to see it used in real world applications. We ask that you use the online calculator or download the code to use it to diagnose the cognitive state of study participants. After which please give us feedback on how to make the program better.</p>
         </div>
-        <div class="col s12 m7 l8 left-align">
+        <div class="col s12 m7  left-align">
           <h4>Cite Us</h5>
-          <p>Please reference HPCC in any research report, journal, or publication that requires citation of authors' work. Recognition of the HPCC resources you used to perform research is important for acquiring funding for the next generation of hardware, support services, and our research and development activities in HPC, visualization, data storage, and grid infrastructure.</p>
+          <p>Please reference Clinical and Translational Science - Informatics and Technology group (CTS-IT) in any research report, journal, or publication that requires citation of authors' work. Recognition of CTS-IT resources you used to perform research is important for acquiring funding for the next generation of informatics services and our research and development activities in software development and information science.</p>
 
-          <p>At minimum, a citation should include:
-          High Performance Computing Center (HPCC)
-          Texas Tech University</p>
+          <p>At minimum, a citation should include: Clinical and Translational Science Informatics and Technology group at the University of Florida</p>
 
-          <p>Our suggested acknowledgement is (select one or more items within the braces, as appropriate):
-          The authors acknowledge the High Performance Computing Center (HPCC) at Texas Tech University at Lubbock for providing {HPC, visualization, database, or grid} resources that have contributed to the research results reported within this paper. URL: http://cmsdev.ttu.edu/hpcc</p>
+          <p>Our suggested acknowledgement is (select one or more items within the braces, as appropriate): The authors acknowledge the Clinical and Translational Science Informatics and Technology group at the University of Florida for providing {Python software library, code, examples, calculator} resources that have contributed to the research results reported within this paper. URL: <a href="http://www.ncbi.nlm.nih.gov/pubmed/20306566">http://www.ncbi.nlm.nih.gov/pubmed/20306566</a></p>
             <div class="row center">
               <div class="col s6 left-align">
                 <img class="responsive-img" src="images/uf-logo.png" alt="UF Logo">
@@ -200,11 +201,17 @@
 
         </div>
 
-        <div class="col s12 m5 l4 left-align">
+        <div class="col s12 m5  left-align">
           <h4>Open Source</h5>
           <p>Hack the code, improve the code.</p>
           <p>Github link goes <a href="https://github.com/ctsit/dxster" target="blank">here.</a></p>
         </div>
+
+        <div class="col s12 m5  left-align">
+          <h4>Donate</h4>
+          <p>This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266. To donate to the 1Florida ADRC go to <a href="http://1floridaadrc.org/donate.html">http://1floridaadrc.org/donate.html</a>.</p>
+        </div>
+
       </div>
     </div>
   </div>

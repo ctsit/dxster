@@ -10,7 +10,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: #834499;
+    color:#ffa900;
 }
 
 .btn, .btn-large {
@@ -46,6 +46,11 @@ a {
 
 .dxlogo {
 	width: 150px;
+}
+
+.dxlogo-sm {
+	width: 57px;
+	padding-top: 3px;
 }
 
 .light-blue.lighten-1 {
