@@ -54,18 +54,53 @@ def calc_dxster(CDR_sb, NPDx):
 
     # Initialize AlgDx empty to prevent wrong value returning.
     AlgDx = ''
-    # If ClinicalDx (CDR-sb) = 0-2.0 & NpDx = Normal  then AlgDx = ‘Normal’
-    # If ClinicalDx (CDR-sb) = 2.5-4.0 & NpDx = Normal then AlgDx = ‘PreMCI-CDR’
-    # If ClinicalDx (CDR-sb) >= 4.5 & NpDx = Normal then AlgDx = ‘Consensus Conference’"
-    if (NPDx=='Normal'):
-        if ((0<=CDR_sb and CDR_sb>=2.0)):
+    
+    if (NPDx=='normal'):
+        if (0 <= CDR_sb <= 2.0):
             AlgDx='Normal'
-        elif ((2.5<=CDR_sb and CDR_sb>=4.0)):
+        elif (2.5 <= CDR_sb <= 4.0):
             AlgDx='PreMCI-CDR'
-        elif (CDR_sb>=4.5):
+        elif (CDR_sb >= 4.5):
             AlgDx='Consensus Conference'
         else:
             AlgDx = '' # need better error handling here for condition fallouts
+    elif (NPDx=='premci'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='PreMCI - NP'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='PreMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = '' # need better error handling here for condition fallouts
+    elif (NPDx=='emci'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='eMCI - NP'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='eMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = '' # need better error handling here for condition fallouts
+    elif (NPDx=='lmci'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='LMCI - NP'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='LMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = '' # need better error handling here for condition fallouts
+    elif (NPDx=='dementia'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='Consensus Conference'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='LMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = '' # need better error handling here for condition fallouts
+
     else:
         AlgDx = '' # need better error handling here for condition fallouts
     return AlgDx
