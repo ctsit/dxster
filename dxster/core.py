@@ -54,7 +54,7 @@ def calc_dxster(CDR_sb, NPDx):
 
     # Initialize AlgDx empty to prevent wrong value returning.
     AlgDx = ''
-    
+
     if (NPDx=='normal'):
         if (0 <= CDR_sb <= 2.0):
             AlgDx='Normal'
@@ -63,7 +63,7 @@ def calc_dxster(CDR_sb, NPDx):
         elif (CDR_sb >= 4.5):
             AlgDx='Consensus Conference'
         else:
-            AlgDx = '' # need better error handling here for condition fallouts
+            AlgDx = 'ERROR normal' # need better error handling here for condition fallouts
     elif (NPDx=='premci'):
         if (0 <= CDR_sb <= 2.0):
             AlgDx='PreMCI - NP'
@@ -72,7 +72,7 @@ def calc_dxster(CDR_sb, NPDx):
         elif (CDR_sb >= 4.5):
             AlgDx='Dementia'
         else:
-            AlgDx = '' # need better error handling here for condition fallouts
+            AlgDx = 'ERROR premci' # need better error handling here for condition fallouts
     elif (NPDx=='emci'):
         if (0 <= CDR_sb <= 2.0):
             AlgDx='eMCI - NP'
@@ -81,7 +81,7 @@ def calc_dxster(CDR_sb, NPDx):
         elif (CDR_sb >= 4.5):
             AlgDx='Dementia'
         else:
-            AlgDx = '' # need better error handling here for condition fallouts
+            AlgDx = 'ERROR emci' # need better error handling here for condition fallouts
     elif (NPDx=='lmci'):
         if (0 <= CDR_sb <= 2.0):
             AlgDx='LMCI - NP'
@@ -90,7 +90,7 @@ def calc_dxster(CDR_sb, NPDx):
         elif (CDR_sb >= 4.5):
             AlgDx='Dementia'
         else:
-            AlgDx = '' # need better error handling here for condition fallouts
+            AlgDx = 'ERROR lmci' # need better error handling here for condition fallouts
     elif (NPDx=='dementia'):
         if (0 <= CDR_sb <= 2.0):
             AlgDx='Consensus Conference'
@@ -99,8 +99,9 @@ def calc_dxster(CDR_sb, NPDx):
         elif (CDR_sb >= 4.5):
             AlgDx='Dementia'
         else:
-            AlgDx = '' # need better error handling here for condition fallouts
+            AlgDx = 'ERROR dementia' # need better error handling here for condition fallouts
 
     else:
-        AlgDx = '' # need better error handling here for condition fallouts
+        AlgDx = 'ERROR else:' + 'CDR_sb=' + str(CDR_sb), 'NPDX=' +  NPDx  # need better error handling here for condition fallouts
+
     return AlgDx
