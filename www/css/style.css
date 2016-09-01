@@ -10,7 +10,15 @@ h1, h2, h3 {
 }
 
 a {
-    color:#ffa900;
+    color:#834499;
+}
+
+.purple-sect-txt a:hover {
+	color:#fefe5b;
+}
+
+.purple-sect-txt a {
+	color:#ebb4ff;
 }
 
 .inline {
@@ -90,7 +98,6 @@ button:focus {
 	width:230px
 }
 
-<<<<<<< HEAD
 .calcicon {
 	height:130px;
 	max-width: 100%;
@@ -102,7 +109,8 @@ button:focus {
 
 footer.page-footer {
      margin-top: 0; 
-=======
+ }
+
 /*Form Styling*/
 .select-wrapper span.caret {
     right: 15px;
@@ -163,7 +171,6 @@ a:active, a:hover {
 
 .inline {
 	display:inline;
->>>>>>> feature/dxcalc_design
 }
 
 @media only screen and (min-width: 601px) {
