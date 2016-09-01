@@ -13,12 +13,20 @@ a {
     color:#ffa900;
 }
 
+.inline {
+	display:inline;
+}
+
 .btn, .btn-large {
 	background-color:orange;
 }
 
 .btn:hover, .btn-large:hover {
 	background-color:darkorange;
+}
+
+button:focus {
+    background-color: #834499;
 }
 
 .calcborder{
@@ -82,6 +90,7 @@ a {
 	width:230px
 }
 
+<<<<<<< HEAD
 .calcicon {
 	height:130px;
 	max-width: 100%;
@@ -93,6 +102,68 @@ a {
 
 footer.page-footer {
      margin-top: 0; 
+=======
+/*Form Styling*/
+.select-wrapper span.caret {
+    right: 15px;
+}
+
+.select-wrapper {
+    position: relative;
+    padding: 0 10px;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+
+.row .col.s12 {
+    padding: 10px;
+}
+
+.select-wrapper input.select-dropdown {
+	margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: none;
+    font-family:'Arimo', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #834499;
+}
+
+.input-field label {
+    color: #4e4e4e;
+    }
+
+.select-wrapper + label {
+    font-size: 1.4rem;
+}
+
+.learn-more {
+	font-size: 1rem;
+    font-weight: bold;
+    color: #721891;
+    cursor: pointer;
+}
+
+a:active, a:hover {
+    color: #bc44e6;
+}
+
+.modal-footer a:hover {
+	color:black ;
+}
+
+.inline {
+	display:inline;
+>>>>>>> feature/dxcalc_design
 }
 
 @media only screen and (min-width: 601px) {
@@ -109,7 +180,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 	border-width: 5px;
 	border-style: solid;
 	padding:50px;
-	margin:75px;
+	margin: 1rem 9% 3rem;
 }
 .calcicon {
 	height:300px;

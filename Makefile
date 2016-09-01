@@ -18,6 +18,7 @@ help:
 	@echo "\t clean - Hey you, your cleanup function can go here."
 	@echo "\t init - install all python package requirement from the requirements.txt file."
 	@echo "\t test - use nosetests to run all unit tests in the /tests folder."
+	@echo "\t serve - use the python SimpleHTTPServer to run a local demo site"
 
 #rc_fake_enrollment:
 # $(REDCAP_RECORDS_CMD) -i $(FAKE_ENROLLMENT_FILE)
@@ -42,3 +43,6 @@ init:
 
 test:
 	nosetests tests
+
+serve:
+	bash scripts/serve.sh scripts/config.ini
