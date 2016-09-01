@@ -13,12 +13,20 @@ a {
     color: #834499;
 }
 
+.inline {
+	display:inline;
+}
+
 .btn, .btn-large {
 	background-color:orange;
 }
 
 .btn:hover, .btn-large:hover {
 	background-color:darkorange;
+}
+
+button:focus {
+    background-color: #834499;
 }
 
 .calcborder{
@@ -75,6 +83,33 @@ a {
 
 .puzzleduck {
 	width:230px
+}
+
+/*Form Styling*/
+.select-wrapper span.caret {
+    right: 15px;
+}
+
+.select-wrapper {
+    position: relative;
+    padding: 0 10px;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.row .col.s12 {
+    padding: 10px;
+}
+
+.select-wrapper input.select-dropdown {
+	margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: none;
+    font-family:'Arimo', sans-serif;
 }
 
 @media only screen and (min-width: 601px) {
