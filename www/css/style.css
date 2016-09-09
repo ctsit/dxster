@@ -82,14 +82,6 @@ button:focus {
 	padding-top: 3px;
 }
 
-.light-blue.lighten-1 {
-    background-color: #834499!important;
-}
-
-.light-blue {
-    background-color: #834499!important;
-}
-
 .section-ltpurple {
 	background-color: #EFE8F7;
 }
@@ -124,7 +116,7 @@ footer.page-footer {
      margin-top: 0; 
  }
 
-/*Form Styling*/
+/*DxCalc Form Styling*/
 .select-wrapper span.caret {
     right: 15px;
 }
@@ -190,26 +182,28 @@ footer.page-footer {
 }
 
 @media only screen and (min-width: 601px) {
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 75px;
     }
 
     .dxlogo {
 	width: 190px;
 	padding-top: 3px;
-}
+	}
+
+	/*DxCalc Section*/
 	.calcborder{
 	border-color:#834499;
 	border-width: 5px;
 	border-style: solid;
 	padding:50px;
 	margin: 1rem 9% 3rem;
-}
-.calcicon {
-	height:300px;
-	margin-top:23px;
-}
-.hidden-line {
-	display:none;
-}
+	}
+	.calcicon {
+		height:300px;
+		margin-top:23px;
+	}
+	.hidden-line {
+		display:none;
+	}
 }
