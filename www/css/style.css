@@ -73,7 +73,7 @@ button:focus {
 	width: 100%;
 }
 
-.dxlogo {
+.dxlogo, .dx-clipboard {
 	width: 150px;
 }
 
@@ -104,7 +104,7 @@ button:focus {
 }
 
 .questionduck {
-	width:400px;
+	width: 100%;
 }
 
 .puzzleduck {
@@ -180,6 +180,13 @@ footer.page-footer {
 
 .inline {
 	display:inline;
+}
+
+
+@media only screen and (min-width: 430px) {
+	.questionduck {
+		width:400px;
+	}
 }
 
 @media only screen and (min-width: 601px) {
