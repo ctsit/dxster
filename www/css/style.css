@@ -12,6 +12,19 @@ h1, h2, h3 {
 a {
     color:#834499;
 }
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color:white;
+}
+
+a:active, a:hover {
+    color: #bc44e6;
+}
+
+.purple.darken-1 {
+    background-color: #8e24aa !important;
+    color: white;
+}
 
 .purple-sect-txt a:hover {
 	color:#fefe5b;
@@ -159,10 +172,6 @@ footer.page-footer {
     font-weight: bold;
     color: #721891;
     cursor: pointer;
-}
-
-a:active, a:hover {
-    color: #bc44e6;
 }
 
 .modal-footer a:hover {
