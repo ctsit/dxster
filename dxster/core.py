@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-  _____        _____ _            
- |  __ \      / ____| |           
- | |  | |_  __ (___ | |_ ___ _ __ 
+  _____        _____ _
+ |  __ \      / ____| |
+ | |  | |_  __ (___ | |_ ___ _ __
  | |  | \ \/ /\___ \| __/ _ \ '__|
- | |__| |>  < ____) | |_  __/ |   
- |_____//_/\_\_____/ \__\___|_| 
+ | |__| |>  < ____) | |_  __/ |
+ |_____//_/\_\_____/ \__\___|_|
 
 Copyright 2016 Christopher P. Barnes <senrabc@gmail.com>
 Copyright 2016 Kevin Hanson <kshanson@ufl.edu>
@@ -52,6 +52,56 @@ def calc_dxster(CDR_sb, NPDx):
 
     """
 
-    # If ClinicalDx (CDR-sb) = 0-2.0 & NpDx = Normal  then AlgDx = ‘Normal’
-    # If ClinicalDx (CDR-sb) = 2.5-4.0 & NpDx = Normal then AlgDx = ‘PreMCI-CDR’
-    # If ClinicalDx (CDR-sb) >= 4.5 & NpDx = Normal then AlgDx = ‘Consensus Conference’"
+    # Initialize AlgDx empty to prevent wrong value returning.
+    AlgDx = ''
+
+    if (NPDx=='normal'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='Normal'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='PreMCI-CDR'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Consensus Conference'
+        else:
+            AlgDx = 'ERROR normal' # need better error handling here for condition fallouts
+    elif (NPDx=='premci'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='PreMCI - NP'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='PreMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = 'ERROR premci' # need better error handling here for condition fallouts
+    elif (NPDx=='emci'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='eMCI - NP'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='eMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = 'ERROR emci' # need better error handling here for condition fallouts
+    elif (NPDx=='lmci'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='LMCI - NP'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='LMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = 'ERROR lmci' # need better error handling here for condition fallouts
+    elif (NPDx=='dementia'):
+        if (0 <= CDR_sb <= 2.0):
+            AlgDx='Consensus Conference'
+        elif (2.5 <= CDR_sb <= 4.0):
+            AlgDx='LMCI'
+        elif (CDR_sb >= 4.5):
+            AlgDx='Dementia'
+        else:
+            AlgDx = 'ERROR dementia' # need better error handling here for condition fallouts
+
+    else:
+        AlgDx = 'ERROR else:' + 'CDR_sb=' + str(CDR_sb), 'NPDX=' +  NPDx  # need better error handling here for condition fallouts
+
+    return AlgDx
