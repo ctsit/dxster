@@ -10,7 +10,32 @@ h1, h2, h3 {
 }
 
 a {
-    color: #834499;
+    color:#834499;
+}
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color:white;
+}
+
+a:active, a:hover {
+    color: #bc44e6;
+}
+
+.purple.darken-1 {
+    background-color: #8e24aa !important;
+    color: white;
+}
+
+.purple-sect-txt a:hover {
+	color:#fefe5b;
+}
+
+.purple-sect-txt a {
+	color:#ebb4ff;
+}
+
+.inline {
+	display:inline;
 }
 
 .btn, .btn-large {
@@ -19,6 +44,10 @@ a {
 
 .btn:hover, .btn-large:hover {
 	background-color:darkorange;
+}
+
+button:focus {
+    background-color: #834499;
 }
 
 .calcborder{
@@ -44,16 +73,13 @@ a {
 	width: 100%;
 }
 
-.dxlogo {
+.dxlogo, .dx-clipboard {
 	width: 150px;
 }
 
-.light-blue.lighten-1 {
-    background-color: #834499!important;
-}
-
-.light-blue {
-    background-color: #834499!important;
+.dxlogo-sm {
+	width: 57px;
+	padding-top: 3px;
 }
 
 .section-ltpurple {
@@ -70,27 +96,114 @@ a {
 }
 
 .questionduck {
-	width:400px;
+	width: 100%;
 }
 
 .puzzleduck {
 	width:230px
 }
 
+.calcicon {
+	height:130px;
+	max-width: 100%;
+}
+
+.hidden-line {
+	display:block;
+}
+
+footer.page-footer {
+     margin-top: 0; 
+ }
+
+/*DxCalc Form Styling*/
+.select-wrapper span.caret {
+    right: 15px;
+}
+
+.select-wrapper {
+    position: relative;
+    padding: 0 10px;
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    margin-top: .5rem;
+}
+
+.row .col.s12 {
+    padding: 10px;
+}
+
+.select-wrapper input.select-dropdown {
+	margin-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: none;
+    font-family:'Arimo', sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+    color: #834499;
+}
+
+.input-field label {
+    color: #4e4e4e;
+    }
+
+.select-wrapper + label {
+    font-size: 1.4rem;
+}
+
+.learn-more {
+	font-size: 1rem;
+    font-weight: bold;
+    color: #721891;
+    cursor: pointer;
+}
+
+.modal-footer a:hover {
+	color:black ;
+}
+
+.inline {
+	display:inline;
+}
+
+
+@media only screen and (min-width: 430px) {
+	.questionduck {
+		width:400px;
+	}
+}
+
 @media only screen and (min-width: 601px) {
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 75px;
     }
 
     .dxlogo {
 	width: 190px;
 	padding-top: 3px;
-}
+	}
+
+	/*DxCalc Section*/
 	.calcborder{
 	border-color:#834499;
 	border-width: 5px;
 	border-style: solid;
 	padding:50px;
-	margin:75px;
-}
+	margin: 1rem 9% 3rem;
+	}
+	.calcicon {
+		height:300px;
+		margin-top:23px;
+	}
+	.hidden-line {
+		display:none;
+	}
 }
