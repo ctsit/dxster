@@ -12,6 +12,19 @@ h1, h2, h3 {
 a {
     color:#834499;
 }
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color:white;
+}
+
+a:active, a:hover {
+    color: #bc44e6;
+}
+
+.purple.darken-1 {
+    background-color: #8e24aa !important;
+    color: white;
+}
 
 .purple-sect-txt a:hover {
 	color:#fefe5b;
@@ -60,21 +73,13 @@ button:focus {
 	width: 100%;
 }
 
-.dxlogo {
+.dxlogo, .dx-clipboard {
 	width: 150px;
 }
 
 .dxlogo-sm {
 	width: 57px;
 	padding-top: 3px;
-}
-
-.light-blue.lighten-1 {
-    background-color: #834499!important;
-}
-
-.light-blue {
-    background-color: #834499!important;
 }
 
 .section-ltpurple {
@@ -91,7 +96,7 @@ button:focus {
 }
 
 .questionduck {
-	width:400px;
+	width: 100%;
 }
 
 .puzzleduck {
@@ -111,7 +116,7 @@ footer.page-footer {
      margin-top: 0; 
  }
 
-/*Form Styling*/
+/*DxCalc Form Styling*/
 .select-wrapper span.caret {
     right: 15px;
 }
@@ -161,10 +166,6 @@ footer.page-footer {
     cursor: pointer;
 }
 
-a:active, a:hover {
-    color: #bc44e6;
-}
-
 .modal-footer a:hover {
 	color:black ;
 }
@@ -173,27 +174,36 @@ a:active, a:hover {
 	display:inline;
 }
 
+
+@media only screen and (min-width: 430px) {
+	.questionduck {
+		width:400px;
+	}
+}
+
 @media only screen and (min-width: 601px) {
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 75px;
     }
 
     .dxlogo {
 	width: 190px;
 	padding-top: 3px;
-}
+	}
+
+	/*DxCalc Section*/
 	.calcborder{
 	border-color:#834499;
 	border-width: 5px;
 	border-style: solid;
 	padding:50px;
 	margin: 1rem 9% 3rem;
-}
-.calcicon {
-	height:300px;
-	margin-top:23px;
-}
-.hidden-line {
-	display:none;
-}
+	}
+	.calcicon {
+		height:300px;
+		margin-top:23px;
+	}
+	.hidden-line {
+		display:none;
+	}
 }
