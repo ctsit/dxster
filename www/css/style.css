@@ -51,14 +51,21 @@ button:focus {
 }
 
 .calcborder{
-	margin-bottom: 15px;
+	margin: 0 -20px 0 -20px;
 	padding:10px;
 	background-color: #EFE8F7;
+
 }
 
 .dxcalc {
 	max-width:400px;
 	margin: 0 auto;
+}
+
+.grey-section {
+	height: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5px 20px;
 }
 
 .font20 {
@@ -115,6 +122,23 @@ button:focus {
 footer.page-footer {
      margin-top: 0; 
  }
+
+.clinical-btn {
+	background-color: #444;
+    display: block;
+    width: 70px;
+    height: 70px;
+    float: left;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+	}     
+
+.clinical-btn:hover, .clinical-btn:active, .clinical-btn:focus {
+	background-color:grey;
+}
 
 /*DxCalc Form Styling*/
 .select-wrapper span.caret {
@@ -197,7 +221,8 @@ footer.page-footer {
 	border-width: 5px;
 	border-style: solid;
 	padding:50px;
-	margin: 1rem 9% 3rem;
+	border-radius: 50px;
+	margin: 10px -20px;
 	}
 	.calcicon {
 		height:300px;
