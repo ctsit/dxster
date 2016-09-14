@@ -53,8 +53,8 @@
   <div class="row center">
     <div class="col s12 left-align">
       <br><br>
-      <h3>DxCalc - <span><h4 class="inline">The Alzheimer's disease Algorithmic Diagnostic Tool</h4></span></h3>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+      <h3>DxCalc - <span><h4 class="inline">The Alzheimer's disease Algorithmic Diagnostic Helper</h4></span></h3>
+      <p>DxSter, the Alzheimer's disease Algorithmic Diagnostic Helper, is a codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis. Codifying the AlgDx algorithmic diagnosis project is an effort to translate the algorithm that calculates the physician and clinical diagnosis. The algorithm is designed to reduce the number of cases that need review in consensus conference. To accomplish this Dr. Meredith Wicklund from the University of Florida has been awarded a grant through the Ed and Ethel Moore Alzheimer’s Research Program in which CTS-IT has been provided funding to translate the AlgDx into Python and JavaScript software libraries.</p>
     </div>
   </div>
 </div>
@@ -80,15 +80,10 @@
 <!-- Modal Structure -->
   <div id="modal1" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <h4>What is Clinical dx?</h4>
-      <p>Text describing what Clinical dx is goes here.</p>
-      <h4>What score should you include?</h4>
-      <h5>CDR-sb score 0 - 2.0</h5>
-      <p>Text describing CDR-sb score 0 - 2.0 goes here.</p>
-      <h5>CDR-sb score 2.5 - 4.0</h5>
-      <p>Text describing CDR-sb score 2.5 - 4.0 goes here.</p>
-      <h5>CDR-sb score 4.5 +</h5>
-      <p>Text describing CDR-sb score 4.5 + goes here.</p>
+      <h4>What is Clinical Dx?</h4>
+      <p>The Clinical Dx is the physician's cognitive diagnosis. After reviewing a patients clinical history, including his or her CDR rating, the Functional Activity Questionanaire, and the MMSE score and sub scores, the physician will determine a cognitive diagnosis for the patient: NCI, MCI, or Dementia. "Factors that could modify the physician’s impression about the subject’s cognitive and functional abilities were taken into consideration. These factors included the subject’s educational and cultural background, sensory (especially visual and hearing) and motor deficits, language and speech disorders, medical and psychiatric conditions and the perceived reliability of the informant." For the purposes of the algorithm the Clinical Dementia Rating Sum of Boxes score is used to represent the clinical diagnosis.<sup>1</sup></p>
+      
+      <blockquote><sup>1</sup> Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. <em>The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18</em>(4), 363–370.</blockquote>  
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
@@ -97,19 +92,10 @@
 
   <div id="modal2" class="modal modal-fixed-footer">
     <div class="modal-content">
-      <h4>What is Neuro Psychological dx?</h4>
-      <p>Text describing what Neuro Psychological dx is goes here.</p>
-      <h4>What stage should you include?</h4>
-      <h5>Normal</h5>
-      <p>Text describing Normal goes here.</p>
-      <h5>PreMCI</h5>
-      <p>Text describing PreMCI goes here.</p>
-      <h5>Early MCI</h5>
-      <p>Text describing Early MCI goes here.</p>
-      <h5>Late MCI</h5>
-      <p>Text describing Late MCI goes here.</p>
-      <h5>Dementia</h5>
-      <p>Text describing Dementia goes here.</p>
+      <h4>What is Neuropsychological Dx?</h4>
+      <p>The Neuropsychological Dx is determined by a test battery given in the native language of the patient (English or Spanish). A typical battery of NACC and non-NACC tests is very large, meaning it has a higher probablity of spurious findings. Therefore the size of the diagnostic battery is limited when determining the Neuropsychological Dx. Memory function tests given include: 3-trial Fuld Object Memory Evaluation and Delayed Visual Reproduction of the Wechsler Memory Scale-R. Non-memory function tests given include: category fluency, letter fluency, Block Design-WAIS-III, Trails B, and Similarities-WAIS-R. For the purposes of the algorithm the possible options are Normal, Pre-MCI, Early-MCI, Late MCI, and Dementia to represent the neuropsychological diagnosis.<sup>1</sup></p>
+      
+      <blockquote><sup>1</sup> Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. <em>The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18</em>(4), 363–370.</blockquote>  
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
@@ -177,7 +163,7 @@
         </div>
         <div class="col m4 s12">
           <ul>
-            <li><a class="white-text" href="#!">something@something.com</a></li>
+            <li><a class="white-text" href="mailto:ctsit@ctsi.ufl.edu?Subject=DxSter%20Question" target="_top">ctsit@ctsi.ufl.edu</a></li>
             <li><a class="white-text" href="#!">DxSter &copy; 2016</a></li>
             <li><a class="white-text" href="#!">Version 0.0.1</a></li>
           </ul>
