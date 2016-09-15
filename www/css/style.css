@@ -124,9 +124,16 @@ footer.page-footer {
  }
 
 .clinical-btn {
+    width: 70px;
+	} 
+
+.neuro-btn {
+	text-transform:none;
+}
+
+.clinical-btn, .neuro-btn {
 	background-color: #444;
     display: block;
-    width: 70px;
     height: 70px;
     float: left;
     font-size: 20px;
@@ -134,7 +141,18 @@ footer.page-footer {
     border-radius: 5px;
     margin: 10px;
     color: white;
-	}     
+	} 
+
+.clinical-btn:visited, .neuro-btn:visited {
+	background-color:pink;
+}
+
+.equals {
+	height: 70px;
+    margin: 10px;
+    font-size: 46px;
+    padding: 0 20px;
+}
 
 .clinical-btn:hover, .clinical-btn:active, .clinical-btn:focus {
 	background-color:grey;
@@ -230,5 +248,40 @@ footer.page-footer {
 	}
 	.hidden-line {
 		display:none;
+	}
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+	.clinical-btn {
+		margin-right: 1rem;
+    	width: 100px;
+	}
+
+	.equals {
+		width:100px;
+	}
+}
+
+@media only screen and (min-width: 1340px) {
+
+	.clinical-btn {
+		margin-right:1rem;
+		width:150px;
+	}
+	.equals {
+		width:150px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.clinical-btn {
+		margin-right:2rem;
+		width:140px;
+	}
+	.equals {
+		width:140px;
 	}
 }
