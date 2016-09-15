@@ -21,6 +21,14 @@ a:active, a:hover {
     color: #bc44e6;
 }
 
+.height23 {
+	height:23rem !important;
+}
+
+.mg3 {
+	margin-top:3rem;
+}
+
 .purple.darken-1 {
     background-color: #8e24aa !important;
     color: white;
