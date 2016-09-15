@@ -21,179 +21,163 @@
   <link rel="icon" href="images/favicon_tsp.png" type="image/png">
   <link href='https://fonts.googleapis.com/css?family=Arimo|Didact+Gothic' rel='stylesheet' type='text/css'>
 </head>
-<body>
 
-<!-- Navigation Menu -->
-  <nav class="purple darken-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo hide-on-large-only"><img src="images/dxster_logo_tsp.png" class="dxlogo" alt="DxSter Logo"></a>
-      <a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down"><img src="images/dxster_logo.png" class="dxlogo-sm" alt="DxSter Logo"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html#about">About</a></li>
-        <li class="active"><a href="dxcalc.html">Go to DxSter</a></li>
-        <li><a href="index.html#publications">Publications</a></li>
-        <li><a href="index.html#getcode">Get the Code</a></li>
-        <li><a href="index.html#faqs">FAQ</a></li>
-        <li><a href="index.html#examples">Examples</a></li>
-        <li><a href="index.html#help">Help</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="index.html#about">About</a></li>
-        <li class="active"><a href="dxcalc.html">Go to DxSter</a></li>
-        <li><a href="index.html#publications">Publications</a></li>
-        <li><a href="index.html#getcode">Get the Code</a></li>
-        <li><a href="index.html#faqs">FAQ</a></li>
-        <li><a href="index.html#examples">Examples</a></li>
-        <li><a href="index.html#help">Help</a></li>
-      </ul>
-    </div>
-  </nav>
+  <body>
+  <!-- Navigation Menu -->
+    <nav class="purple darken-2" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo hide-on-large-only"><img src="images/dxster_logo_tsp.png" class="dxlogo" alt="DxSter Logo"></a>
+        <a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down"><img src="images/dxster_logo.png" class="dxlogo-sm" alt="DxSter Logo"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html#about">About</a></li>
+          <li class="active"><a href="dxcalc.html">Go to DxSter</a></li>
+          <li><a href="index.html#publications">Publications</a></li>
+          <li><a href="index.html#getcode">Get the Code</a></li>
+          <li><a href="index.html#faqs">FAQ</a></li>
+          <li><a href="index.html#examples">Examples</a></li>
+          <li><a href="index.html#help">Help</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html#about">About</a></li>
+          <li class="active"><a href="dxcalc.html">Go to DxSter</a></li>
+          <li><a href="index.html#publications">Publications</a></li>
+          <li><a href="index.html#getcode">Get the Code</a></li>
+          <li><a href="index.html#faqs">FAQ</a></li>
+          <li><a href="index.html#examples">Examples</a></li>
+          <li><a href="index.html#help">Help</a></li>
+        </ul>
+      </div>
+    </nav>
 
 
-<div class="container">
-  <div class="row center">
-    <div class="col s12 left-align">
-      <br><br>
-      <h3>DxCalc - <span><h4 class="inline">The Alzheimer's disease Algorithmic Diagnostic Helper</h4></span></h3>
-      <p>DxSter, the Alzheimer's disease Algorithmic Diagnostic Helper, is a codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis. Codifying the AlgDx algorithmic diagnosis project is an effort to translate the algorithm that calculates the physician and clinical diagnosis. The algorithm is designed to reduce the number of cases that need review in consensus conference. To accomplish this Dr. Meredith Wicklund from the University of Florida has been awarded a grant through the Ed and Ethel Moore Alzheimer’s Research Program in which CTS-IT has been provided funding to translate the AlgDx into Python and JavaScript software libraries.</p>
+  <div class="container">
+    <div class="row center">
+      <div class="col s12 left-align">
+        <br><br>
+        <h3>DxCalc - <span><h4 class="inline">The Alzheimer's disease Algorithmic Diagnostic Helper</h4></span></h3>
+        <p>DxSter, the Alzheimer's disease Algorithmic Diagnostic Helper, is a codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis. Codifying the AlgDx algorithmic diagnosis project is an effort to translate the algorithm that calculates the physician and clinical diagnosis. The algorithm is designed to reduce the number of cases that need review in consensus conference. To accomplish this Dr. Meredith Wicklund from the University of Florida has been awarded a grant through the Ed and Ethel Moore Alzheimer’s Research Program in which CTS-IT has been provided funding to translate the AlgDx into Python and JavaScript software libraries.</p>
+      </div>
     </div>
   </div>
-</div>
+
+
+  <!-- DxCalc Section -->
+  <div class="container">
+    <div class="calcborder">
+      <div class="row">
+        <div class="valign-wrapper">
+          <img src="images/dxcalc.svg" class="valign dxcalc" alt="DxSter Calc">
+        </div>
+        <p class="center font20">Alxheimer's Algorithmic Diagnostic Helper</p>
+
+        <div class="grey-section"></div>
+            
+  <!-- Begin Modal Structure -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>What is Clinical Dx?</h4>
+          <p>The Clinical Dx is the physician's cognitive diagnosis. After reviewing a patients clinical history, including his or her CDR rating, the Functional Activity Questionanaire, and the MMSE score and sub scores, the physician will determine a cognitive diagnosis for the patient: NCI, MCI, or Dementia. "Factors that could modify the physician’s impression about the subject’s cognitive and functional abilities were taken into consideration. These factors included the subject’s educational and cultural background, sensory (especially visual and hearing) and motor deficits, language and speech disorders, medical and psychiatric conditions and the perceived reliability of the informant." For the purposes of the algorithm the Clinical Dementia Rating Sum of Boxes score is used to represent the clinical diagnosis.<sup>1</sup></p>
+          
+          <blockquote><sup>1</sup> Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. <em>The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18</em>(4), 363–370.</blockquote>  
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>What is Neuropsychological Dx?</h4>
+          <p>The Neuropsychological Dx is determined by a test battery given in the native language of the patient (English or Spanish). A typical battery of NACC and non-NACC tests is very large, meaning it has a higher probablity of spurious findings. Therefore the size of the diagnostic battery is limited when determining the Neuropsychological Dx. Memory function tests given include: 3-trial Fuld Object Memory Evaluation and Delayed Visual Reproduction of the Wechsler Memory Scale-R. Non-memory function tests given include: category fluency, letter fluency, Block Design-WAIS-III, Trails B, and Similarities-WAIS-R. For the purposes of the algorithm the possible options are Normal, Pre-MCI, Early-MCI, Late MCI, and Dementia to represent the neuropsychological diagnosis.<sup>1</sup></p>
+          
+          <blockquote><sup>1</sup> Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. <em>The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18</em>(4), 363–370.</blockquote>  
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
+        </div>
+      </div>
+  <!-- End Modal Structure -->
+
+
+        <div class="col s12">
+          <h5>Neuro Psychological dx<div class="inline learn-more">
+              <a data-target="modal1" class="modal-trigger">
+                &nbsp (Learn more)</a>
+            </div></h5>
+        </div>
+
+        <button class="neuro-btn btn">Normal</button>
+        <button class="neuro-btn btn">PreMCI</button>
+        <button class="neuro-btn btn">Early MCI</button>
+        <button class="neuro-btn btn">Late MCI</button>
+        <button class="neuro-btn btn">Dementia</button>
+
+        <div class="col s12">
+          <h5>Clincial dx<div class="inline learn-more">
+              <a data-target="modal1" class="modal-trigger">
+                &nbsp (Learn more)</a>
+            </div></h5>
+        </div>
+
+        <button class="clinical-btn btn">0.0</button>
+        <button class="clinical-btn btn">0.5</button>
+        <button class="clinical-btn btn">1.0</button>
+        <button class="clinical-btn btn">1.5</button>
+        <button class="clinical-btn btn">2.0</button>
+        <button class="clinical-btn btn">2.5</button>
+        <button class="clinical-btn btn">3.0</button>
+        <button class="clinical-btn btn">3.5</button>
+        <button class="clinical-btn btn">4.0</button>
+        <button class="clinical-btn btn">4.5</button>
+        <button class="clinical-btn btn">4.5+</button>
+        <button class="equals left btn waves-effect waves-light" type="submit" name="action">=</button>
+
+      </div> <!-- close row -->
+    </div> <!-- close calcborder  -->
+  </div><!-- close container -->
 
 
 
 
 
+  <!-- Footer Section -->
 
-<div class="container">
-<!-- DxCalc Section -->
-<div class="calcborder">
-  <div class="row">
-    <div class="valign-wrapper">
-      <img src="images/dxcalc.svg" class="valign dxcalc" alt="DxSter Calc">
-    </div>
-    <p class="center font20">Alxheimer's Algorithmic Diagnostic Helper</p>
-
-    <div class="grey-section"></div>
-        
-<!-- Modal Structure -->
-  <div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>What is Clinical Dx?</h4>
-      <p>The Clinical Dx is the physician's cognitive diagnosis. After reviewing a patients clinical history, including his or her CDR rating, the Functional Activity Questionanaire, and the MMSE score and sub scores, the physician will determine a cognitive diagnosis for the patient: NCI, MCI, or Dementia. "Factors that could modify the physician’s impression about the subject’s cognitive and functional abilities were taken into consideration. These factors included the subject’s educational and cultural background, sensory (especially visual and hearing) and motor deficits, language and speech disorders, medical and psychiatric conditions and the perceived reliability of the informant." For the purposes of the algorithm the Clinical Dementia Rating Sum of Boxes score is used to represent the clinical diagnosis.<sup>1</sup></p>
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col m8 s12">
+            <p class="grey-text text-lighten-4">This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266.</p>
+          </div>
+          <div class="col m4 s12">
+            <ul>
+              <li><a class="white-text" href="mailto:ctsit@ctsi.ufl.edu?Subject=DxSter%20Question" target="_top">ctsit@ctsi.ufl.edu</a></li>
+              <li><a class="white-text" href="#!">DxSter &copy; 2016</a></li>
+              <li><a class="white-text" href="#!">Version 0.0.1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       
-      <blockquote><sup>1</sup> Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. <em>The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18</em>(4), 363–370.</blockquote>  
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
-    </div>
+      <div class="footer-copyright">
+        <div class="container">
+        This website was designed by <a class="orange-text text-lighten-3" href="https://www.ctsi.ufl.edu/research/study-design-and-analysis/informatics-consulting/" target="blank">CTS-IT</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <div data-role="footer" class="nav-glyphish-example ui-footer ui-bar-a" data-position="fixed" id="footerDiv">
+
   </div>
+  <script>
+  $(document).ready(function() {
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+  </script>
 
-  <div id="modal2" class="modal modal-fixed-footer">
-    <div class="modal-content">
-      <h4>What is Neuropsychological Dx?</h4>
-      <p>The Neuropsychological Dx is determined by a test battery given in the native language of the patient (English or Spanish). A typical battery of NACC and non-NACC tests is very large, meaning it has a higher probablity of spurious findings. Therefore the size of the diagnostic battery is limited when determining the Neuropsychological Dx. Memory function tests given include: 3-trial Fuld Object Memory Evaluation and Delayed Visual Reproduction of the Wechsler Memory Scale-R. Non-memory function tests given include: category fluency, letter fluency, Block Design-WAIS-III, Trails B, and Similarities-WAIS-R. For the purposes of the algorithm the possible options are Normal, Pre-MCI, Early-MCI, Late MCI, and Dementia to represent the neuropsychological diagnosis.<sup>1</sup></p>
-      
-      <blockquote><sup>1</sup> Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. <em>The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18</em>(4), 363–370.</blockquote>  
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
-    </div>
-  </div>
-
-
-    <div class="col s12">
-    <h5>Neuro Psychological dx<div class="inline learn-more">
-        <a data-target="modal1" class="modal-trigger">
-          &nbsp (Learn more)</a>
-      </div></h5>
-  </div>
-
-    <button class="neuro-btn btn">Normal</button>
-    <button class="neuro-btn btn">PreMCI</button>
-    <button class="neuro-btn btn">Early MCI</button>
-    <button class="neuro-btn btn">Late MCI</button>
-    <button class="neuro-btn btn">Dementia</button>
 
     
-
-  <div class="col s12">
-    <h5>Clincial dx<div class="inline learn-more">
-        <a data-target="modal1" class="modal-trigger">
-          &nbsp (Learn more)</a>
-      </div></h5>
-  </div>
-
-    <button class="clinical-btn btn">0.0</button>
-    <button class="clinical-btn btn">0.5</button>
-    <button class="clinical-btn btn">1.0</button>
-    <button class="clinical-btn btn">1.5</button>
-    <button class="clinical-btn btn">2.0</button>
-    <button class="clinical-btn btn">2.5</button>
-    <button class="clinical-btn btn">3.0</button>
-    <button class="clinical-btn btn">3.5</button>
-    <button class="clinical-btn btn">4.0</button>
-    <button class="clinical-btn btn">4.5</button>
-    <button class="clinical-btn btn">4.5+</button>
-    <button class="equals left btn waves-effect waves-light" type="submit" name="action">=</button>
-    <!--   Results Section   -->
-<!-- <div class="container">
-  <div class="row center">
-    <div class="col s12 left-align">
-      <h3>Results</h3>
-      <hr>
-    </div>
-  </div>
-</div> -->
-  </div> 
-  </div> <!-- close calcborder  -->
-</div>
-
-
-
-
-
-<!-- Footer Section -->
-
-  <footer class="page-footer grey darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col m8 s12">
-          <p class="grey-text text-lighten-4">This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266.</p>
-
-
-
-        </div>
-        <div class="col m4 s12">
-          <ul>
-            <li><a class="white-text" href="mailto:ctsit@ctsi.ufl.edu?Subject=DxSter%20Question" target="_top">ctsit@ctsi.ufl.edu</a></li>
-            <li><a class="white-text" href="#!">DxSter &copy; 2016</a></li>
-            <li><a class="white-text" href="#!">Version 0.0.1</a></li>
-          </ul>
-        </div>
-        
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      This website was designed by <a class="orange-text text-lighten-3" href="https://www.ctsi.ufl.edu/research/study-design-and-analysis/informatics-consulting/" target="blank">CTS-IT</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <div data-role="footer" class="nav-glyphish-example ui-footer ui-bar-a" data-position="fixed" id="footerDiv">
-
-</div>
-<script>
-$(document).ready(function() {
-  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-  $('.modal-trigger').leanModal();
-});
-</script>
-
-
-  
 
   </body>
 </html>
