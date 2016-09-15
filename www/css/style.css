@@ -51,14 +51,21 @@ button:focus {
 }
 
 .calcborder{
-	margin-bottom: 15px;
+	margin: 0 -20px 0 -20px;
 	padding:10px;
 	background-color: #EFE8F7;
+
 }
 
 .dxcalc {
 	max-width:400px;
 	margin: 0 auto;
+}
+
+.grey-section {
+	height: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5px 20px;
 }
 
 .font20 {
@@ -115,6 +122,41 @@ button:focus {
 footer.page-footer {
      margin-top: 0; 
  }
+
+.clinical-btn {
+    width: 70px;
+	} 
+
+.neuro-btn {
+	text-transform:none;
+}
+
+.clinical-btn, .neuro-btn {
+	background-color: #444;
+    display: block;
+    height: 70px;
+    float: left;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+	} 
+
+.clinical-btn:visited, .neuro-btn:visited {
+	background-color:pink;
+}
+
+.equals {
+	height: 70px;
+    margin: 10px;
+    font-size: 46px;
+    padding: 0 20px;
+}
+
+.clinical-btn:hover, .clinical-btn:active, .clinical-btn:focus {
+	background-color:grey;
+}
 
 /*DxCalc Form Styling*/
 .select-wrapper span.caret {
@@ -197,7 +239,8 @@ footer.page-footer {
 	border-width: 5px;
 	border-style: solid;
 	padding:50px;
-	margin: 1rem 9% 3rem;
+	border-radius: 50px;
+	margin: 10px -20px;
 	}
 	.calcicon {
 		height:300px;
@@ -205,5 +248,40 @@ footer.page-footer {
 	}
 	.hidden-line {
 		display:none;
+	}
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+	.clinical-btn {
+		margin-right: 1rem;
+    	width: 100px;
+	}
+
+	.equals {
+		width:100px;
+	}
+}
+
+@media only screen and (min-width: 1340px) {
+
+	.clinical-btn {
+		margin-right:1rem;
+		width:150px;
+	}
+	.equals {
+		width:150px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.clinical-btn {
+		margin-right:2rem;
+		width:140px;
+	}
+	.equals {
+		width:140px;
 	}
 }
