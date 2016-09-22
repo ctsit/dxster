@@ -58,7 +58,10 @@ button:focus {
     background-color: #834499;
 }
 
-
+.calc-titles {
+	margin-bottom: 0 !important;
+	padding-bottom:0 !important;
+}
 
 .font20 {
 	font-size: 20px;
@@ -138,9 +141,19 @@ footer.page-footer {
 }
 
 .calcborder{
-	margin: 0 -20px 0 -20px;
-	padding:10px;
+    border-color: #834499;
+    border-width: 5px;
+    border-style: solid;
+    padding: 10px 25px;
+    border-radius: 50px;
+    max-width:350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 	background-color: #EFE8F7;
+}
+
+.calc-titles {
+	font-size: 19px;
 }
 
 .dxcalc {
@@ -154,9 +167,9 @@ footer.page-footer {
     margin: 5px 20px;
 }
 
-.clinical-btn {
-    width: 70px;
-	} 
+.clinical-btn, .equals {
+    width: 68px;
+} 
 
 .neuro-btn {
 	text-transform:none;
@@ -165,12 +178,13 @@ footer.page-footer {
 .clinical-btn, .neuro-btn {
 	background-color: #444;
     display: block;
-    height: 70px;
+    height: 50px;
     float: left;
-    font-size: 20px;
-    padding: 18px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px;
     border-radius: 5px;
-    margin: 10px;
+    margin: 5px;
     color: white;
 	} 
 
@@ -179,10 +193,12 @@ footer.page-footer {
 }
 
 .equals {
-	height: 70px;
-    margin: 10px;
+	height: 50px;
+    margin: 5px;
     font-size: 46px;
+    line-height: 46px;
     padding: 0 20px;
+    border-radius: 5px;
 }
 
 .clinical-btn:hover, .clinical-btn:active, .clinical-btn:focus {
@@ -201,6 +217,10 @@ footer.page-footer {
     height: 75px;
     }
 
+    .calc-titles {
+    	font-size: 1.64rem;
+    }
+
     .dxlogo {
 	width: 190px;
 	padding-top: 3px;
@@ -211,50 +231,64 @@ footer.page-footer {
 	border-color:#834499;
 	border-width: 5px;
 	border-style: solid;
-	padding:50px;
+	padding: 25px 30px;
 	border-radius: 50px;
-	margin: 10px -20px;
+    max-width: 512px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 	}
 	.calcicon {
 		height:300px;
 		margin-top:23px;
 	}
+
+	.clinical-btn, .equals {
+    width: 67px;
+	}
+
+	.neuro-btn {
+    width: 144px;
+	}
+
 	.hidden-line {
 		display:none;
 	}
 }
 
-
-@media only screen and (min-width: 1100px) {
-
-	.clinical-btn {
-		margin-right: 1rem;
-    	width: 100px;
-	}
-
-	.equals {
-		width:100px;
+@media only screen and (min-width: 649px) {
+	.clinical-btn, .neuro-btn {
+	    font-size: 20px;
+	    line-height: 20px;
 	}
 }
 
-@media only screen and (min-width: 1340px) {
+@media only screen and (min-width: 664px) {
+	
 
-	.clinical-btn {
-		margin-right:1rem;
-		width:150px;
+}
+
+@media only screen and (min-width: 713px) {
+
+	.clinical-btn, .equals {
+    width: 83px;
 	}
-	.equals {
-		width:150px;
+
+	.calcborder{
+		max-width: 615px
+	}
+
+	.neuro-btn {
+    width: inherit;
 	}
 }
 
 @media only screen and (min-width: 1400px) {
 
-	.clinical-btn {
+	/*.clinical-btn {
 		margin-right:2rem;
 		width:140px;
 	}
 	.equals {
 		width:140px;
-	}
+	}*/
 }
