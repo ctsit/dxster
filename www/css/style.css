@@ -58,6 +58,10 @@ button:focus {
     background-color: #834499;
 }
 
+button.selected {
+	background-color: orange;
+}
+
 .calc-titles {
 	margin-bottom: 0 !important;
 	padding-bottom:0 !important;
@@ -198,9 +202,6 @@ footer.page-footer {
     color: white;
 	} 
 
-.clinical-btn:visited, .neuro-btn:visited {
-	background-color:pink;
-}
 
 .equals {
 	height: inherit;
@@ -211,9 +212,9 @@ footer.page-footer {
     border-radius: 5px;
 }
 
-.neuro-btn:hover, .neuro-btn:active, .neuro-btn:focus, .neuro-btn:hover, .clinical-btn:active, .clinical-btn:focus {
-	background-color:#ababab;
-}
+/*.neuro-btn:focus, .clinical-btn:focus {
+	background-color:#8d8c8c;
+}*/
 
 /*Query for iphone6 screen*/
 @media only screen and (min-width: 375px) {
@@ -245,7 +246,7 @@ footer.page-footer {
 	.questionduck {
 		width:400px;
 	}
-	
+
 	.dxcalc {
 	transform: scale(1);
 	max-width:400px;
