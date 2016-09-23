@@ -157,18 +157,29 @@ footer.page-footer {
 }
 
 .dxcalc {
+	transform: scale(.5);
+	transform-origin: 35%;
 	max-width:400px;
 	margin: 0 auto;
 }
 
+.valign-wrapper {
+	height:35px;
+}
+
+
+.dxcalc-height {
+	height: 45px;
+}
+
 .grey-section {
-	height: 150px;
+	height: 85px;
     background-color: rgba(0, 0, 0, 0.2);
-    margin: 5px 20px;
+    margin: 5px 10px;
 }
 
 .clinical-btn, .equals {
-    width: 68px;
+    width: 52px;
 } 
 
 .neuro-btn {
@@ -178,7 +189,6 @@ footer.page-footer {
 .clinical-btn, .neuro-btn {
 	background-color: #444;
     display: block;
-    height: 50px;
     float: left;
     font-size: 18px;
     line-height: 18px;
@@ -193,22 +203,68 @@ footer.page-footer {
 }
 
 .equals {
-	height: 50px;
+	height: inherit;
     margin: 5px;
-    font-size: 46px;
-    line-height: 46px;
-    padding: 0 20px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 10px;
     border-radius: 5px;
 }
 
-.clinical-btn:hover, .clinical-btn:active, .clinical-btn:focus {
-	background-color:grey;
+.neuro-btn:hover, .neuro-btn:active, .neuro-btn:focus, .neuro-btn:hover, .clinical-btn:active, .clinical-btn:focus {
+	background-color:#ababab;
 }
 
+/*Query for iphone6 screen*/
+@media only screen and (min-width: 375px) {
+	.clinical-btn, .equals {
+	    width: 64px;
+	} 
+
+	.clinical-btn, .neuro-btn {
+    height: 50px;
+	}
+
+	.dxcalc {
+	transform-origin: inherit;
+	}
+
+	.equals {
+	height: 50px;
+    font-size: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+	}
+
+	.grey-section {
+	height: 120px;
+	}
+}
 
 @media only screen and (min-width: 430px) {
 	.questionduck {
 		width:400px;
+	}
+	
+	.dxcalc {
+	transform: scale(1);
+	max-width:400px;
+	} 
+
+	.grey-section {
+	height: 150px;
+	}
+
+	.dxcalc-height {
+	height: inherit;
+	}
+
+	.valign-wrapper {
+	height: inherit;
+	}
+
+	.calcborder {
+    padding: 25px 30px;
 	}
 }
 
@@ -227,11 +283,11 @@ footer.page-footer {
 	}
 
 	/*DxCalc Section*/
-	.calcborder{
+    .calcborder{
 	border-color:#834499;
 	border-width: 5px;
 	border-style: solid;
-	padding: 25px 30px;
+	padding: 10px 25px 0 25px;
 	border-radius: 50px;
     max-width: 512px;
     margin: 0 auto;
@@ -270,15 +326,25 @@ footer.page-footer {
 @media only screen and (min-width: 713px) {
 
 	.clinical-btn, .equals {
-    width: 83px;
+    width: 104px;
 	}
 
 	.calcborder{
-		max-width: 615px
+		max-width: 550px;
+		padding:10px 40px 0 40px;
 	}
 
 	.neuro-btn {
-    width: inherit;
+    width: 144px;
+	}
+
+	.clinical-btn, .neuro-btn {
+		padding:7px;
+		margin: 8px;
+	}
+
+	.equals {
+		margin: 8px;
 	}
 }
 
