@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>DxSter Alzheimer's disease Algorithmic Diagnostic Tool</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>DxSter Alzheimer's disease Algorithmic Diagnostic Tool</title>
+  <meta name="description" content="A codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis.">
 
   <link rel="icon" href="images/favicon_tsp.png" type="image/png">
   <link href='https://fonts.googleapis.com/css?family=Arimo|Didact+Gothic' rel='stylesheet' type='text/css'>
@@ -25,8 +26,8 @@
 
 <!-- Navigation Menu -->
   <nav class="purple darken-2" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo hide-on-large-only"><img src="images/dxster_logo_tsp_13.png" class="dxlogo" alt="DxSter Logo"></a>
-      <a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down"><img src="images/dxster_logo_03.png" class="dxlogo-sm" alt="DxSter Logo"></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo hide-on-large-only"><img src="images/dxster_logo_tsp.png" class="dxlogo" alt="DxSter Logo"></a>
+      <a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down"><img src="images/dxster_logo.png" class="dxlogo-sm" alt="DxSter Logo"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#about">About</a></li>
@@ -50,14 +51,6 @@
   </nav>
 
 
-<!-- Header Image Section -->
-<!--   <div class="no-pad-bot" id="index-banner">
-    
-      <img class="responsive-img hm-img" src="images/lake-lg.png">
-    
-  </div> -->
-
-
 <!-- About Section -->
 <a name="about"></a>
     <div class="section no-pad-bot section-ltpurple" id="index-banner">
@@ -72,7 +65,7 @@
 
         <div class="col s12 m7">
           <h3 class="header grey-text text-darken-3">What is DxSter?</h5>  
-          <p>DxSter, the Alzheimer's disease Algorithmic Diagnostic Helper, is a codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis. Codifying the AlgDx algorithmic diagnosis project is an effort to translate the algorithm that calculates the physician and clinical diagnosis. The algorithm is designed to reduce the number of cases that need review in consensus conference.  To accomplish this Dr. Meredith Wicklund from the University of Florida has been awarded a grant through the Ed and Ethel Moore Alzheimer’s Research Program in which CTS-IT has been provided funding to translate the AlgDx into python software libraries. Click the button below to see how it works!</p>
+          <p>DxSter, the Alzheimer's disease Algorithmic Diagnostic Helper, is a codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis. Codifying the AlgDx algorithmic diagnosis project is an effort to translate the algorithm that calculates the physician and clinical diagnosis. The algorithm is designed to reduce the number of cases that need review in consensus conference.  To accomplish this Dr. Meredith Wicklund from the University of Florida has been awarded a grant through the Ed and Ethel Moore Alzheimer’s Research Program in which CTS-IT has been provided funding to translate the AlgDx into Python and JavaScript software libraries. Click the button below to see how it works!</p>
           <a href="dxcalc.html" id="download-button" class="btn-large waves-effect waves-light purple darken-1">Check it out!</a>
         </div>
       </div>
@@ -159,8 +152,29 @@
         <div class="col s12 left-align">
           <hr>
           <h3>Examples</h3>
-          <h5>HTML & Javascript implementation DxSter calculator</h5>
-          <h5>Bash & Python with CSV test data set script example</h5>
+          <div class="row">
+            <div class="col s12 m6 mg3">
+                  <h5>HTML & Javascript Implementation: DxSter Calculator</h5>
+                  <p>Go to <a href="dxcalc.html" target="_blank">DxCalc</a> and view page source to see an example implementation of the dxster.js JavaScript AlgDx Module. This module is a port of the Python library. It implements the identical AlgDx truth table and AlgDx calc functions. dxcalc.html serves as a reference implementation of this functionality.</p>
+            </div>
+            <div class="col s12 m6 center-align">
+              <img src="images/dxcalc_image.png" class="height23 responsive-img">
+            </div>
+          </div>
+
+          <div class="row s12 mg3">
+            <div class="col s12 m6 right">
+              <h5>Bash & Python with CSV test data set script example</h5>
+              <p>In the <a href="https://github.com/ctsit/dxster/tree/develop/examples/bash" target="_blank">examples/bash folder</a> in the GitHub repository are example files of a sample csv dataset called sample_data.csv that contains a subject ID, NPDx, and CDR score. The file calc_algdx_sample.sh will call Python and the dxster python module to loop through every row in your sample data and output the AlgDx corresponding diagnosis to stdout.</p>
+            </div>
+            
+            <div class="col m5 left">
+              <img src="images/bash_example.png" class="responsive-img">
+            </div>
+
+            <div class="col s0 m1">
+            </div>
+          </div>
           
         </div>
       </div>
@@ -195,14 +209,15 @@
             </div>
 
         </div>
-
-        <div class="col s12 m5  left-align">
+<div class="col s0 l1"></div>
+        <div class="col s12 m5 l4  left-align">
           <h4>Open Source</h5>
           <p>Hack the code, improve the code.</p>
           <p>Github link goes <a href="https://github.com/ctsit/dxster" target="blank">here.</a></p>
         </div>
 
-        <div class="col s12 m5  left-align">
+        <div class="col s0 l1"></div>
+        <div class="col s12 m5 l4 left-align">
           <h4>Donate</h4>
           <p>This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266. To donate to the 1Florida ADRC go to <a href="http://1floridaadrc.org/donate.html">http://1floridaadrc.org/donate.html</a>.</p>
         </div>
@@ -215,7 +230,6 @@
 
 
 <!-- Footer Section -->
-
   <footer class="page-footer grey darken-3">
     <div class="container">
       <div class="row">
@@ -224,7 +238,7 @@
         </div>
         <div class="col l4 s12">
           <ul>
-            <li><a class="white-text" href="#!">something@something.com</a></li>
+            <li><a class="white-text" href="mailto:ctsit@ctsi.ufl.edu?Subject=DxSter%20Question" target="_top">ctsit@ctsi.ufl.edu</a></li>
             <li><a class="white-text" href="#!">DxSter &copy; 2016</a></li>
             <li><a class="white-text" href="#!">Version 0.0.1</a></li>
           </ul>
@@ -241,11 +255,7 @@
 
 
   <div data-role="footer" class="nav-glyphish-example ui-footer ui-bar-a" data-position="fixed" id="footerDiv">
-
-</div>
-
-
-  
+  </div>
 
   </body>
 </html>
