@@ -1,3 +1,8 @@
+textarea{
+    text-align:right;
+    height: 150px;
+
+}
 html {
   line-height: 1.5;
   font-family: 'Arimo', sans-serif;
@@ -257,10 +262,4 @@ footer.page-footer {
 	.equals {
 		width:140px;
 	}
-}
-
-textarea{
-    text-align:right;
-    height: 150px;
-    
 }
