@@ -55,7 +55,6 @@
   <div class="container">
     <div class="row center">
       <div class="col s12 left-align">
-        <br><br>
         <h3>DxCalc - <span><h4 class="inline">The Alzheimer's disease Algorithmic Diagnostic Helper</h4></span></h3>
         <p>DxSter, the Alzheimer's disease Algorithmic Diagnostic Helper, is a codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis. Codifying the AlgDx algorithmic diagnosis project is an effort to translate the algorithm that calculates the physician and clinical diagnosis. The algorithm is designed to reduce the number of cases that need review in consensus conference. To accomplish this Dr. Meredith Wicklund from the University of Florida has been awarded a grant through the Ed and Ethel Moore Alzheimer’s Research Program in which CTS-IT has been provided funding to translate the AlgDx into Python and JavaScript software libraries.</p>
       </div>
@@ -70,6 +69,7 @@
         <div class="valign-wrapper">
           <img src="images/dxcalc.svg" class="valign dxcalc" alt="DxSter Calc">
         </div>
+
         <p class="center font20">Alxheimer's Algorithmic Diagnostic Helper (This is a reference implementation of the AlgDx Algorithm Library.)</p>
 
         <div class="grey-section">
@@ -104,10 +104,12 @@
       </div>
   <!-- End Modal Structure -->
 
+=
+        <div class="col s12 calc-titles">
+          <h5 class="calc-titles">Neuro Psychological dx : Select One (1)<div class="inline learn-more">
+              <a data-target="modal1" class="modal-trigger">
+                &nbsp (Learn more)</a>
 
-        <div class="col s12">
-          <h5>Neuro Psychological dx: Select One (1)<div class="inline learn-more">
-              <a data-target="modal2" class="modal-trigger">(Learn more)</a>
             </div></h5>
         </div>
 
@@ -117,9 +119,12 @@
         <button id='lmci' class="neuro-btn btn" onclick="calcFunction(4)">Late MCI</button>
         <button id='dementia' class="neuro-btn btn" onclick="calcFunction(5)">Dementia</button>
 
-        <div class="col s12">
-          <h5>Clincial dx: Select One (1) and then click the (=) to get AlgDx result.<div class="inline learn-more">
-              <a data-target="modal1" class="modal-trigger">(Learn more)</a>
+
+        <div class="col s12 calc-titles">
+          <h5 class="calc-titles">Clincial dx: Select One (1) and then click the (=) to get AlgDx result.<div class="inline learn-more">
+              <a data-target="modal1" class="modal-trigger">
+                &nbsp (Learn more)</a>
+
             </div></h5>
         </div>
 
