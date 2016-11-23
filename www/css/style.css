@@ -68,6 +68,10 @@ button.selected {/*
 	background-color: #9e9e9e;
 }
 
+:focus {
+    outline: none;
+}
+
 .calc-titles {
 	margin-bottom: 0 !important;
 	padding-bottom:0 !important;
@@ -222,10 +226,11 @@ footer.page-footer {
     line-height: 36px;
     padding: 0 10px;
     border-radius: 5px;
+    background-color: #834499;
 }
 
 .equals:hover, .equals:focus {
-	background-color: darkorange;
+	background-color: #9e60b4;
 }
 
 
