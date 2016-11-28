@@ -248,6 +248,10 @@ footer.page-footer {
 	margin: 0 auto;
 }
 
+.border {
+	border: black 1pt solid;
+}
+
 
 /*Query for iphone6 screen*/
 @media only screen and (min-width: 375px) {
