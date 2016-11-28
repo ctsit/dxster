@@ -233,6 +233,18 @@ footer.page-footer {
 	background-color: #9e60b4;
 }
 
+/*Upload page*/
+.input_box {
+	background-color: #ecd8f3;
+    padding: 100px 0;
+    width: 100%;
+}
+
+#csv {
+	display: block;
+	margin: 0 auto;
+}
+
 
 /*Query for iphone6 screen*/
 @media only screen and (min-width: 375px) {
