@@ -17,9 +17,12 @@ h1, h2, h3 {
 a {
     color:#834499;
 }
-nav ul a:hover {
+nav ul a:hover, .print-btn:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  color:white;
+  color: white;
+}
+.row .col .print-btn {
+	background-color: #7b1fa2;
 }
 
 a:active, a:hover {
