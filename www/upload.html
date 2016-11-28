@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+<!-- DxSter Javascript MODULE: TODO host this at ghpages repo on ctsit github org> -->
+<script src="js/dxster.js"></script>
+
+  <title>DxSter Calc Upload</title>
+</head>
+<!--
+
+References:
+http://stackoverflow.com/questions/29393064/reading-in-a-local-csv-file-in-javascript
+http://jsfiddle.net/thzytf1w/2/
+
+
+
+-->
+
+
+<style>
+output {
+    display: block;
+    margin-top: 4em;
+    font-family: monospace;
+    font-size: .8em;
+}</style>
+
+
+<p>Select local CSV File:</p>
+<input id="csv" type="file">
+
+<output id="out">
+    file contents will appear here
+</output>
+
+<script>
+var dataURL = '';
+var fileInput = document.getElementById("csv"),
+
+    readFile = function () {
+        var reader = new FileReader();
+        reader.onload = function () {
+
+            //whole document
+            //document.getElementById('out').innerHTML = reader.result;
+
+            // By lines
+            document.getElementById('out').innerHTML = "test";
+            var lines_str = '';
+            //var cntr = 0;
+            var algdx = '';
+            var lines = this.result.split('\n');
+
+            for(var line = 0; line < lines.length; line++){
+              //console.log(lines[line]);
+
+
+
+                var items = lines[line].split(',');
+                console.log('subject_id= ' + items[0]);
+                console.log('npdx= ' +items[1]);
+                console.log('cdr_sb= ' + items[2]);
+                algdx = DxsterCalcModule.calculate(items[2],items[1])
+                console.log('algdx= ' + algdx);
+
+
+                lines_str = lines_str + lines[line] + ' ,' + algdx + '<br>';
+                // for ( var item = 0; item < items.length; item++){
+                //
+                //   //console.log(items[item]);
+                //   console.log('subject_id= ' + items[0]);
+                //   console.log('npdx= ' +items[1]);
+                //   console.log('cdr_sb= ' + items[2]);
+                //   console.log('algdx= TODO');
+                //
+                //
+                //
+                //   //if its the first line the columns npdx and cdr_sb will
+                //   // be present at index location 1 & 2
+                //   cntr = cntr + 1;
+                //   console.log('cntr= ' + cntr);
+                // }
+
+            }
+            document.getElementById('out').innerHTML = lines_str
+        };
+        // start reading the file. When it is done, calls the onload event defined above.
+        reader.readAsBinaryString(fileInput.files[0]);
+    };
+
+fileInput.addEventListener('change', readFile);
+
+// function arrayToTable(tableData) {
+//     var table = $('<table></table>');
+//     $(tableData).each(function (i, rowData) {
+//         var row = $('<tr></tr>');
+//         $(rowData).each(function (j, cellData) {
+//             row.append($('<td>'+cellData+'</td>'));
+//         });
+//         table.append(row);
+//     });
+//     return table;
+// }
+//
+// $.ajax({
+//     type: "GET",
+//     //url: "http://localhost:8000/MOCK_DATA.csv",
+//     url: dataURL,
+//     success: function (data) {
+//         $('body').append(arrayToTable(Papa.parse(data).data));
+//     }
+// });
+
+var algdx = (
+  DxsterCalcModule.calculate(
+    //document.getElementById("CDR_sb").value,
+    //document.getElementById("NPDx").value
+  )
+)
+
+</script>
+
+</html>
