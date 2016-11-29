@@ -252,6 +252,45 @@ footer.page-footer {
 	border: black 1pt solid;
 }
 
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute; /*Position is causing clickable action not to work*/
+	z-index: -1;
+}
+
+label {
+    font-family: 'Arimo', sans-serif;
+}
+
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: #834499;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+        background-color: rgb(102, 8, 135);
+}
+
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+.inputfile:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
 
 /*Query for iphone6 screen*/
 @media only screen and (min-width: 375px) {

@@ -77,7 +77,8 @@ output {
         <h5>Select local CSV File:</h5>
         <p>Data input should be structured with these 3 columns: subject_id, npdx, and cdr_sb. Download an example dataset <a href="../examples/bash/sample_data.csv">here</a>.</p>
         <div class="input_box">
-            <input id="csv" type="file">
+            <input id="csv" type="file" name="file" class="inputfile" />
+            <label for="file">Choose a file</label>
         </div>
 
         <output id="out">
