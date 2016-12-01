@@ -252,31 +252,14 @@ footer.page-footer {
 	border: black 1pt solid;
 }
 
-/*.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute; *//*Position is causing clickable action not to work*/
-	/*z-index: -1;
-	display: inline-block;
-}*/
-
-.inputfile {
-	width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
+.file_upload {
+    position: relative;
+    overflow: hidden;
 }
 
-label {
-    font-family: 'Arimo', sans-serif;
-}
-
-.inputfile + label {
+.inputfile-btn {
     font-size: 1.25em;
+    font-family: 'Arimo', sans-serif;
     font-weight: 700;
     color: white;
     background-color: #834499;
@@ -287,18 +270,22 @@ label {
     margin: 0 auto;
 }
 
-.inputfile:focus + label,
-.inputfile + label:hover {
+.inputfile-btn:focus,
+.inputfile-btn:hover {
         background-color: rgb(102, 8, 135);
 }
 
-.inputfile + label {
-	cursor: pointer; /* "hand" cursor */
-}
-
-.inputfile:focus + label {
-	outline: 1px dotted #000;
-	outline: -webkit-focus-ring-color auto 5px;
+.file_upload input.upload {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
 }
 
 /*table*/
@@ -323,6 +310,7 @@ label {
 	border-bottom: 1px solid #ccc;
 	padding: 10px;
 }
+
 
 /*Query for iphone6 screen*/
 @media only screen and (min-width: 375px) {
