@@ -252,12 +252,22 @@ footer.page-footer {
 	border: black 1pt solid;
 }
 
+/*.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute; *//*Position is causing clickable action not to work*/
+	/*z-index: -1;
+	display: inline-block;
+}*/
+
 .inputfile {
 	width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
 	overflow: hidden;
-	position: absolute; /*Position is causing clickable action not to work*/
+	position: absolute;
 	z-index: -1;
 }
 
@@ -291,6 +301,28 @@ label {
 	outline: -webkit-focus-ring-color auto 5px;
 }
 
+/*table*/
+#upload_table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 13px;
+	margin-bottom: 45px;
+    max-width: 550px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#upload_table th {
+	font-size: 14px;
+	font-weight: normal;
+	color: #302f2f;
+    padding: 10px 8px;
+    border-bottom: 2px solid #8c8989;
+}
+
+#upload_table td {
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
 
 /*Query for iphone6 screen*/
 @media only screen and (min-width: 375px) {
