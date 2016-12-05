@@ -69,9 +69,6 @@
         <div class="valign-wrapper">
           <img src="images/dxcalc.svg" class="valign dxcalc" alt="DxSter Calc">
         </div>
-
-        <p class="center font20">Alxheimer's Algorithmic Diagnostic Helper (This is a reference implementation of the AlgDx Algorithm Library.)</p>
-
         <div class="grey-section">
           <textarea id="calc_window">Please select one Neuropsychological and one Clinical Dx. then click the = to get the AlgDx.</textarea>
           <input type=hidden id="NPDx" value="">
@@ -104,13 +101,14 @@
       </div>
   <!-- End Modal Structure -->
 
-=
         <div class="col s12 calc-titles">
-          <h5 class="calc-titles">Neuro Psychological dx : Select One (1)<div class="inline learn-more">
-              <a data-target="modal1" class="modal-trigger">
+          <h5 class="calc-titles"><b>Neuro Psychological dx :</b> 
+            <div class="inline learn-more">
+              <a data-target="modal2" class="modal-trigger">
                 &nbsp (Learn more)</a>
-
-            </div></h5>
+            </div>
+            <span class="calc__descriptor">Select One (1)</span>
+          </h5>
         </div>
 
         <button id='normal' class="neuro-btn btn" onclick="calcFunction(1)">Normal</button>
@@ -121,11 +119,13 @@
 
 
         <div class="col s12 calc-titles">
-          <h5 class="calc-titles">Clincial dx: Select One (1) and then click the (=) to get AlgDx result.<div class="inline learn-more">
+          <h5 class="calc-titles"><b>Clincial dx :</b>
+            <div class="inline learn-more">
               <a data-target="modal1" class="modal-trigger">
                 &nbsp (Learn more)</a>
-
-            </div></h5>
+            </div>
+            <span class="calc__descriptor">Select One (1) and then click the (=) to get AlgDx result.</span>
+          </h5>
         </div>
 
         <button class="clinical-btn btn" onclick="calcFunction(6)">0.0</button>
