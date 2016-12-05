@@ -1,0 +1,383 @@
+textarea{
+    text-align:right;
+    height: 100%;
+
+}
+html {
+  line-height: 1.5;
+  font-family: 'Arimo', sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2, h3 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+a {
+    color:#834499;
+}
+nav ul a:hover, .print-btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.row .col .print-btn {
+	background-color: #7b1fa2;
+}
+
+a:active, a:hover {
+    color: #bc44e6;
+}
+
+.height23 {
+	height:23rem !important;
+}
+
+.mg3 {
+	margin-top:3rem;
+}
+
+.purple.darken-1 {
+    background-color: #8e24aa !important;
+    color: white;
+}
+
+.purple-sect-txt a:hover {
+	color:#fefe5b;
+}
+
+.purple-sect-txt a {
+	color:#ebb4ff;
+}
+
+.inline {
+	display:inline;
+}
+
+.btn, .btn-large {
+	background-color:orange;
+}
+
+.btn:hover, .btn-large:hover {
+	background-color: #9e60b4;
+}
+
+button:focus {
+    background-color: #834499;
+}
+
+button.selected {/*
+	background-color: #834499;*/
+	background-color: #9e9e9e;
+}
+
+:focus {
+    outline: none;
+}
+
+.calc-titles {
+	margin-bottom: 0 !important;
+	padding-bottom:0 !important;
+	margin-top: 0;
+}
+
+.calc__descriptor {
+	display: inline-block;
+    font-size: 17px;
+}
+
+.font20 {
+	font-size: 20px;
+}
+
+.input-field label.active {
+    font-size: 1rem;
+}
+
+.ducksize {
+	width: 100%;
+}
+
+.dxlogo, .dx-clipboard {
+	width: 150px;
+}
+
+.dxlogo-sm {
+	width: 57px;
+	padding-top: 3px;
+}
+
+.section-ltpurple {
+	background-color: #EFE8F7;
+}
+
+.section-purple {
+	background-color: #834499;
+	color: white;
+}
+.hm-img {
+	width:100%;
+	margin-bottom: -10px;
+}
+
+.questionduck {
+	width: 100%;
+}
+
+.puzzleduck {
+	width:230px
+}
+
+.calcicon {
+	height:130px;
+	max-width: 100%;
+}
+
+.hidden-line {
+	display:block;
+}
+
+footer.page-footer {
+     margin-top: 0;
+ }
+
+
+
+/*DxCalc Styling*/
+.row .col.s12 {
+    padding: 10px;
+}
+
+.learn-more {
+	font-size: 1rem;
+    font-weight: bold;
+    color: #721891;
+    cursor: pointer;
+}
+
+.modal-footer a:hover {
+	color:black ;
+}
+
+.inline {
+	display:inline;
+}
+
+.calcborder{
+    border-color: #834499;
+    border-width: 5px;
+    border-style: solid;
+    padding: 10px 25px;
+    border-radius: 50px;
+    max-width:350px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+	background-color: #EFE8F7;
+}
+
+.calc-titles {
+	font-size: 19px;
+}
+
+.dxcalc {
+	transform: scale(.5);
+	transform-origin: 35%;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.valign-wrapper {
+	height:35px;
+}
+
+
+.dxcalc-height {
+	height: 45px;
+}
+
+.grey-section {
+	height: 85px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5px 10px;
+}
+
+.clinical-btn, .equals {
+    width: 52px;
+}
+
+.neuro-btn {
+	text-transform:none;
+}
+
+.clinical-btn, .neuro-btn {
+	background-color: #444;
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+	}
+
+
+.equals {
+	height: inherit;
+    margin: 5px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background-color: #834499;
+}
+
+.equals:hover, .equals:focus {
+	background-color: #9e60b4;
+}
+
+/*Upload page*/
+.input_box {
+	background-color: #ecd8f3;
+    padding: 100px 0;
+    width: 100%;
+}
+
+#csv {
+	display: block;
+	margin: 0 auto;
+}
+
+.border {
+	border: black 1pt solid;
+}
+
+
+/*Query for iphone6 screen*/
+@media only screen and (min-width: 375px) {
+	.clinical-btn, .equals {
+	    width: 64px;
+	}
+
+	.clinical-btn, .neuro-btn {
+    height: 50px;
+	}
+
+	.dxcalc {
+	transform-origin: inherit;
+	}
+
+	.equals {
+	height: 50px;
+    font-size: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+	}
+
+	.grey-section {
+	height: 120px;
+	}
+}
+
+@media only screen and (min-width: 430px) {
+	.questionduck {
+		width:400px;
+	}
+
+	.dxcalc {
+	transform: scale(1);
+	max-width: 250px;
+	}
+
+	.grey-section {
+	height: 100px;
+	}
+
+	.dxcalc-height {
+	height: inherit;
+	}
+
+	.valign-wrapper {
+	height: inherit;
+	}
+
+	.calcborder {
+    padding: 25px 30px;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 75px;
+    }
+
+    .calc-titles {
+    	font-size: 1.64rem;
+    }
+
+    .dxlogo {
+	width: 190px;
+	padding-top: 3px;
+	}
+
+	/*DxCalc Section*/
+    .calcborder{
+	border-color:#834499;
+	border-width: 5px;
+	border-style: solid;
+	padding: 10px 25px 0 25px;
+	border-radius: 50px;
+    max-width: 512px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+	}
+	.calcicon {
+		height:300px;
+		margin-top:23px;
+	}
+
+	.clinical-btn, .equals {
+    width: 67px;
+	}
+
+	.neuro-btn {
+    width: 144px;
+	}
+
+	.hidden-line {
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 649px) {
+	.clinical-btn, .neuro-btn {
+	    font-size: 20px;
+	    line-height: 20px;
+	}
+}
+
+
+@media only screen and (min-width: 713px) {
+
+	.clinical-btn, .equals {
+    width: 104px;
+	}
+
+	.calcborder{
+		max-width: 550px;
+		padding:10px 40px 0 40px;
+	}
+
+	.neuro-btn {
+    width: 144px;
+	}
+
+	.clinical-btn, .neuro-btn {
+		padding:7px;
+		margin: 8px;
+	}
+
+	.equals {
+		margin: 8px;
+	}
+}

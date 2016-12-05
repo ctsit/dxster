@@ -1,0 +1,56 @@
+subject_id, npdx, cdr_sb
+101,normal,0
+102,normal,.5
+103,normal,1.0
+104,normal, 1.5
+105,normal, 2.0
+106,normal, 2.5
+107,normal, 3.0
+108,normal, 3.5
+109,normal, 4.0
+110,normal, 4.5
+111,normal, 5.5
+112,premci, 0
+113,premci, .5
+114,premci, 1.0
+115,premci, 1.5
+116,premci, 2.0
+117,premci, 2.5
+118,premci, 3.0
+119,premci, 3.5
+120,premci, 4.0
+121,premci, 4.5
+122,premci, 5.5
+123,emci, 0
+124,emci, .5
+125,emci, 1.0
+126,emci, 1.5
+127,emci, 2.0
+128,emci, 2.5
+129,emci, 3.0
+130,emci, 3.5
+131,emci, 4.0
+132,emci, 4.5
+133,emci, 5.5
+134,lmci, 0
+135,lmci, .5
+136,lmci, 1.0
+137,lmci, 1.5
+138,lmci, 2.0
+139,lmci, 2.5
+140,lmci, 3.0
+141,lmci, 3.5
+142,lmci, 4.0
+143,lmci, 4.5
+144,lmci, 5.5
+145,dementia, 0
+146,dementia, .5
+147,dementia, 1.0
+148,dementia, 1.5
+149,dementia, 2.0
+150,dementia, 2.5
+151,dementia, 3.0
+152,dementia, 3.5
+153,dementia, 4.0
+154,dementia, 4.5
+155,dementia, 5.5

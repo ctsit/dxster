@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>DxSter Calc</title>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/functions.js"></script>
+
+  <!-- DxSter Javascript MODULE: TODO host this at ghpages repo on ctsit github org> -->
+  <script src="js/dxster.js"></script>
+
+  <script>
+
+  var sel1 = document.getElementById('ClinicalDx1'),
+    ClinicalDx1 = sel1.options[sel1.selectedIndex].value;
+
+  //var ClinicalDx1 = document.getElementById('ClinicalDx').value;
+  //var NpDx1 = document.getElementById('NpDx').value;
+
+
+
+  </script>
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" href="images/favicon_tsp.png" type="image/png">
+  <link href='https://fonts.googleapis.com/css?family=Arimo|Didact+Gothic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- Navigation Menu -->
+  <nav class="purple darken-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo hide-on-large-only"><img src="images/dxster_logo_tsp_13.png" class="dxlogo" alt="DxSter Logo"></a>
+      <a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down"><img src="images/dxster_logo_03.png" class="dxlogo-sm" alt="DxSter Logo"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html#about">About</a></li>
+        <li class="active"><a href="dxcalc.html">Go to DxSter</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#getcode">Get the Code</a></li>
+        <li><a href="index.html#faqs">FAQ</a></li>
+        <li><a href="index.html#examples">Examples</a></li>
+        <li><a href="index.html#help">Help</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="index.html#about">About</a></li>
+        <li class="active"><a href="dxcalc.html">Go to DxSter</a></li>
+        <li><a href="index.html#publications">Publications</a></li>
+        <li><a href="index.html#getcode">Get the Code</a></li>
+        <li><a href="index.html#faqs">FAQ</a></li>
+        <li><a href="index.html#examples">Examples</a></li>
+        <li><a href="index.html#help">Help</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div class="container">
+  <div class="row center">
+    <div class="col s12 left-align">
+      <br><br>
+      <h3>DxCalc - <span><h4 class="inline">The Alzheimer's disease Algorithmic Diagnostic Tool</h4></span></h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- DxCalc Section -->
+<div class="calcborder">
+  <div class="row">
+    <div class="valign-wrapper">
+      <img src="images/dxcalc.svg" class="valign dxcalc" alt="DxSter Calc">
+    </div>
+    <p class="center font20">Alxheimer's Algorithmic Diagnostic Helper</p>
+    <form class="col s12">
+
+      <div class="input-field col s12">
+        <!-- TEST -->
+
+<!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>What is Clinical dx?</h4>
+      <p>Text describing what Clinical dx is goes here.</p>
+      <h4>What score should you include?</h4>
+      <h5>CDR-sb score 0 - 2.0</h5>
+      <p>Text describing CDR-sb score 0 - 2.0 goes here.</p>
+      <h5>CDR-sb score 2.5 - 4.0</h5>
+      <p>Text describing CDR-sb score 2.5 - 4.0 goes here.</p>
+      <h5>CDR-sb score 4.5 +</h5>
+      <p>Text describing CDR-sb score 4.5 + goes here.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>What is Neuro Psychological dx?</h4>
+      <p>Text describing what Neuro Psychological dx is goes here.</p>
+      <h4>What stage should you include?</h4>
+      <h5>Normal</h5>
+      <p>Text describing Normal goes here.</p>
+      <h5>PreMCI</h5>
+      <p>Text describing PreMCI goes here.</p>
+      <h5>Early MCI</h5>
+      <p>Text describing Early MCI goes here.</p>
+      <h5>Late MCI</h5>
+      <p>Text describing Late MCI goes here.</p>
+      <h5>Dementia</h5>
+      <p>Text describing Dementia goes here.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-grey btn-flat ">Close</a>
+    </div>
+  </div>
+<!-- TEST -->
+        <select id="ClinicalDx">
+          <option value="-" disabled selected>Choose your Clinical Dx</option>
+          <option value="0">CDR-sb score 0</option>
+          <option value="0.5">CDR-sb score 0.5</option>
+          <option value="1.0">CDR-sb score 1.0</option>
+          <option value="1.5">CDR-sb score 1.5</option>
+          <option value="2.0">CDR-sb score 2.0</option>
+          <option value="2.5">CDR-sb score 2.5</option>
+          <option value="3.0">CDR-sb score 3.0</option>
+          <option value="3.5">CDR-sb score 3.5</option>
+          <option value="4.0">CDR-sb score 4.0</option>
+          <option value="4.5">CDR-sb score 4.5</option>
+          <option value="5.0">CDR-sb score greater than 4.5+</option>
+        </select>
+        <label>Clincial dx<div class="inline learn-more ">
+        <a data-target="modal1" class="modal-trigger">
+          &nbsp (Learn more)</a>
+      </div></label>
+      </div>
+
+      <div class="input-field col s12">
+        <select id="NpDx">
+          <option value="" disabled selected>Choose your Neuro Psychological Dx</option>
+          <option value="normal">Normal</option>
+          <option value="premci">PreMCI</option>
+          <option value="emci">Early MCI</option>
+          <option value="lmci">Late MCI</option>
+          <option value="dementia">Dementia</option>
+        </select>
+        <label>Neuro Psychological dx<div class="inline learn-more ">
+        <a data-target="modal2" class="modal-trigger">
+          &nbsp (Learn more)</a>
+      </div></label>
+      </div>
+
+      <input onclick="alert(DxsterCalcModule.calculate(ClinicalDx1,'premci'))" class="btn waves-effect waves-light" type="submit" name="compute" value="Compute"> <br><br><br><br>
+
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Compute
+          <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+    <!--   Results Section   -->
+<div class="container">
+  <div class="row center">
+    <div class="col s12 left-align">
+      <h3>Results</h3>
+      <hr>
+    </div>
+  </div>
+</div>
+  </div>
+  </div> <!-- close calcborder  -->
+
+
+<div class="container">
+
+  alert DxsterCalcModule.calculate(0,'normal'):
+  <button onclick="alert(DxsterCalcModule.calculate(0,'normal'))">0,'normal'</button>
+  <br>
+  alert DxsterCalcModule.calculate(3,'normal'):
+  <button onclick="alert(DxsterCalcModule.calculate(3,'normal'))">3,'normal'</button>
+  <br>
+  alert DxsterCalcModule.calculate(5,'normal'):
+  <button onclick="alert(DxsterCalcModule.calculate(5,'normal'))">5,'normal'</button>
+  <br>
+  alert DxsterCalcModule.calculate(1,'premci'):
+  <button onclick="alert(DxsterCalcModule.calculate(1,'premci'))">1,'premci'</button>
+  <br>
+  alert DxsterCalcModule.calculate(3,'premci'):
+  <button onclick="alert(DxsterCalcModule.calculate(3,'premci'))">3,'premci'</button>
+  <br>
+
+</div>
+
+
+<!-- Footer Section -->
+
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col m8 s12">
+          <p class="grey-text text-lighten-4">This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266.</p>
+
+
+
+        </div>
+        <div class="col m4 s12">
+          <ul>
+            <li><a class="white-text" href="#!">something@something.com</a></li>
+            <li><a class="white-text" href="#!">DxSter &copy; 2016</a></li>
+            <li><a class="white-text" href="#!">Version 0.0.1</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      This website was designed by <a class="orange-text text-lighten-3" href="https://www.ctsi.ufl.edu/research/study-design-and-analysis/informatics-consulting/" target="blank">CTS-IT</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div data-role="footer" class="nav-glyphish-example ui-footer ui-bar-a" data-position="fixed" id="footerDiv">
+
+</div>
+<script>
+$(document).ready(function() {
+  // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+  $('.modal-trigger').leanModal();
+});
+</script>
+
+
+
+
+  </body>
+</html>
