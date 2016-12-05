@@ -33,3 +33,19 @@ Go to DxCalc (https://cts-it.github.io/dxster/) and view page source to see an e
 
 #Literature cited.
 Duara, R., Loewenstein, D. A., Greig, M., Acevedo, A., Potter, E., Appel, J., … Potter, H. (2010). Reliability and Validity of an Algorithm for the Diagnosis of Normal Cognition, MCI and Dementia: Implications for Multi-Center Research Studies. The American Journal of Geriatric Psychiatry : Official Journal of the American Association for Geriatric Psychiatry, 18(4), 363–370.http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2844658/
+
+#Special Thanks to:
+Style Guide for Module project structure:
+http://docs.python-guide.org/en/latest/writing/structure/
+https://github.com/kennethreitz/samplemod
+http://www.kennethreitz.org/essays/repository-structure-and-python
+
+```
+  _____        _____ _            
+ |  __ \      / ____| |           
+ | |  | |_  __ (___ | |_ ___ _ __
+ | |  | \ \/ /\___ \| __/ _ \ '__|
+ | |__| |>  < ____) | |_  __/ |   
+ |_____//_/\_\_____/ \__\___|_| 
+```
+Ascii Logo Thanks to : http://textart.io/figlet ( font style "big" )
