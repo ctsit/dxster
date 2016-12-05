@@ -1,0 +1,265 @@
+textarea{
+    text-align:right;
+    height: 150px;
+
+}
+html {
+  line-height: 1.5;
+  font-family: 'Arimo', sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2, h3 {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+a {
+    color:#834499;
+}
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color:white;
+}
+
+a:active, a:hover {
+    color: #bc44e6;
+}
+
+.height23 {
+	height:23rem !important;
+}
+
+.mg3 {
+	margin-top:3rem;
+}
+
+.purple.darken-1 {
+    background-color: #8e24aa !important;
+    color: white;
+}
+
+.purple-sect-txt a:hover {
+	color:#fefe5b;
+}
+
+.purple-sect-txt a {
+	color:#ebb4ff;
+}
+
+.inline {
+	display:inline;
+}
+
+.btn, .btn-large {
+	background-color:orange;
+}
+
+.btn:hover, .btn-large:hover {
+	background-color:darkorange;
+}
+
+button:focus {
+    background-color: #834499;
+}
+
+
+
+.font20 {
+	font-size: 20px;
+}
+
+.input-field label.active {
+    font-size: 1rem;
+}
+
+.ducksize {
+	width: 100%;
+}
+
+.dxlogo, .dx-clipboard {
+	width: 150px;
+}
+
+.dxlogo-sm {
+	width: 57px;
+	padding-top: 3px;
+}
+
+.section-ltpurple {
+	background-color: #EFE8F7;
+}
+
+.section-purple {
+	background-color: #834499;
+	color: white;
+}
+.hm-img {
+	width:100%;
+	margin-bottom: -10px;
+}
+
+.questionduck {
+	width: 100%;
+}
+
+.puzzleduck {
+	width:230px
+}
+
+.calcicon {
+	height:130px;
+	max-width: 100%;
+}
+
+.hidden-line {
+	display:block;
+}
+
+footer.page-footer {
+     margin-top: 0;
+ }
+
+
+
+/*DxCalc Styling*/
+.row .col.s12 {
+    padding: 10px;
+}
+
+.learn-more {
+	font-size: 1rem;
+    font-weight: bold;
+    color: #721891;
+    cursor: pointer;
+}
+
+.modal-footer a:hover {
+	color:black ;
+}
+
+.inline {
+	display:inline;
+}
+
+.calcborder{
+	margin: 0 -20px 0 -20px;
+	padding:10px;
+	background-color: #EFE8F7;
+}
+
+.dxcalc {
+	max-width:400px;
+	margin: 0 auto;
+}
+
+.grey-section {
+	height: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5px 20px;
+}
+
+.clinical-btn {
+    width: 70px;
+	}
+
+.neuro-btn {
+	text-transform:none;
+}
+
+.clinical-btn, .neuro-btn {
+	background-color: #444;
+    display: block;
+    height: 70px;
+    float: left;
+    font-size: 20px;
+    padding: 18px;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+	}
+
+.clinical-btn:visited, .neuro-btn:visited {
+	background-color:pink;
+}
+
+.equals {
+	height: 70px;
+    margin: 10px;
+    font-size: 46px;
+    padding: 0 20px;
+}
+
+.clinical-btn:hover, .clinical-btn:active, .clinical-btn:focus {
+	background-color:grey;
+}
+
+
+@media only screen and (min-width: 430px) {
+	.questionduck {
+		width:400px;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 75px;
+    }
+
+    .dxlogo {
+	width: 190px;
+	padding-top: 3px;
+	}
+
+	/*DxCalc Section*/
+	.calcborder{
+	border-color:#834499;
+	border-width: 5px;
+	border-style: solid;
+	padding:50px;
+	border-radius: 50px;
+	margin: 10px -20px;
+	}
+	.calcicon {
+		height:300px;
+		margin-top:23px;
+	}
+	.hidden-line {
+		display:none;
+	}
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+	.clinical-btn {
+		margin-right: 1rem;
+    	width: 100px;
+	}
+
+	.equals {
+		width:100px;
+	}
+}
+
+@media only screen and (min-width: 1340px) {
+
+	.clinical-btn {
+		margin-right:1rem;
+		width:150px;
+	}
+	.equals {
+		width:150px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.clinical-btn {
+		margin-right:2rem;
+		width:140px;
+	}
+	.equals {
+		width:140px;
+	}
+}

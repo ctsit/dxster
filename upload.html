@@ -1,0 +1,44 @@
+<!--
+
+References:
+http://stackoverflow.com/questions/29393064/reading-in-a-local-csv-file-in-javascript
+http://jsfiddle.net/thzytf1w/2/
+
+
+
+-->
+
+
+<style>
+output {
+    display: block;
+    margin-top: 4em;
+    font-family: monospace;
+    font-size: .8em;
+}</style>
+
+
+<p>Select local CSV File:</p>
+<input id="csv" type="file">
+
+<output id="out">
+    file contents will appear here
+</output>
+
+<script>
+var fileInput = document.getElementById("csv"),
+
+    readFile = function () {
+        var reader = new FileReader();
+        reader.onload = function () {
+            document.getElementById('out').innerHTML = reader.result;
+        };
+        // start reading the file. When it is done, calls the onload event defined above.
+        reader.readAsBinaryString(fileInput.files[0]);
+    };
+
+fileInput.addEventListener('change', readFile);
+
+
+
+</script>
