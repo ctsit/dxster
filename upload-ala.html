@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta name="description" content="A codified algorithm that can diagnose normal cognition, MCI and Dementia which services as a valid alternative that reduces time, effort and biases associated with consensus diagnosis.">
+
+ <!--  Scripts-->    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.js"></script>
+    <!-- DxSter Javascript MODULE: TODO host this at ghpages repo on ctsit github org> -->
+    <script src="js/dxster.js"></script>
+
+    <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" href="images/favicon_tsp.png" type="image/png">
+  <link href='https://fonts.googleapis.com/css?family=Arimo|Didact+Gothic' rel='stylesheet' type='text/css'>
+
+  <title>DxSter Calc Upload</title>
+</head>
+<!--
+
+References:
+http://stackoverflow.com/questions/29393064/reading-in-a-local-csv-file-in-javascript
+http://jsfiddle.net/thzytf1w/2/
+
+
+
+-->
+
+
+<style>
+output {
+    display: block;
+    margin-top: 4em;
+    font-family: monospace;
+    font-size: .8em;
+}
+</style>
+
+  <!-- Navigation Menu -->
+    <nav class="purple darken-2" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo hide-on-large-only"><img src="images/dxster_logo_tsp.png" class="dxlogo" alt="DxSter Logo"></a>
+        <a id="logo-container" href="index.html" class="brand-logo hide-on-med-and-down"><img src="images/dxster_logo.png" class="dxlogo-sm" alt="DxSter Logo"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="dxcalc.html">Go to DxSter</a></li>
+          <li><a href="index.html#publications">Publications</a></li>
+          <li><a href="index.html#getcode">Get the Code</a></li>
+          <li><a href="index.html#faqs">FAQ</a></li>
+          <li><a href="index.html#examples">Examples</a></li>
+          <li><a href="index.html#help">Help</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="index.html#about">About</a></li>
+          <li class="active"><a href="dxcalc.html">Go to DxSter</a></li>
+          <li><a href="index.html#publications">Publications</a></li>
+          <li><a href="index.html#getcode">Get the Code</a></li>
+          <li><a href="index.html#faqs">FAQ</a></li>
+          <li><a href="index.html#examples">Examples</a></li>
+          <li><a href="index.html#help">Help</a></li>
+        </ul>
+      </div>
+    </nav>
+
+<div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2>Test out your own data in the DxSter Uploader!</h2>
+
+        <h5>Select local CSV File:</h5>
+        <p>Data input should be structured with these 4 columns: subject_id, npdx, cdr_sb, and undefined. Download an example dataset <a href="../examples/bash/sample_data.csv">here</a>.</p>
+        <div class="input_box">
+            <input id="csv" type="file">
+        </div>
+
+        <output id="out">
+            file contents will appear here
+        </output>
+
+        <a class="waves-effect waves-light print-btn btn"><i class="material-icons right">print</i>Print Results</a>
+      </div>
+    </div>
+</div>
+
+
+<!-- Footer Section -->
+
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col m8 s12">
+            <p class="grey-text text-lighten-4">This work has been supported by the Florida Department of Health's Ed and Ethel Moore Alzheimer's Disease Research Program grant number 66315-UF, the National Institute of Aging, and the 1Florida Alzheimer's Research Center grant number P50AG047266.</p>
+          </div>
+          <div class="col m4 s12">
+            <ul>
+              <li><a class="white-text" href="mailto:ctsit@ctsi.ufl.edu?Subject=DxSter%20Question" target="_top">ctsit@ctsi.ufl.edu</a></li>
+              <li><a class="white-text">DxSter &copy; 2016</a></li>
+              <li><a class="white-text">Version 0.0.1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+        This website was designed by <a class="orange-text text-lighten-3" href="https://www.ctsi.ufl.edu/research/study-design-and-analysis/informatics-consulting/" target="blank">CTS-IT</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <div data-role="footer" class="nav-glyphish-example ui-footer ui-bar-a" data-position="fixed" id="footerDiv">
+
+<script>
+var dataURL = '';
+var fileInput = document.getElementById("csv"),
+
+    readFile = function () {
+        var reader = new FileReader();
+        reader.onload = function () {
+
+            //whole document
+            //document.getElementById('out').innerHTML = reader.result;
+
+            // By lines
+            document.getElementById('out').innerHTML = "test";
+            var lines_str = '';
+            //var cntr = 0;
+            var algdx = '';
+            var lines = this.result.split('\n');
+
+            for(var line = 0; line < lines.length; line++){
+              //console.log(lines[line]);
+
+
+
+                var items = lines[line].split(',');
+                console.log('subject_id= ' + items[0]);
+                console.log('npdx= ' +items[1]);
+                console.log('cdr_sb= ' + items[2]);
+                algdx = DxsterCalcModule.calculate(items[2],items[1])
+                console.log('algdx= ' + algdx);
+
+
+                lines_str = lines_str + lines[line] + ' ,' + algdx + '<br>';
+                // for ( var item = 0; item < items.length; item++){
+                //
+                //   //console.log(items[item]);
+                //   console.log('subject_id= ' + items[0]);
+                //   console.log('npdx= ' +items[1]);
+                //   console.log('cdr_sb= ' + items[2]);
+                //   console.log('algdx= TODO');
+                //
+                //
+                //
+                //   //if its the first line the columns npdx and cdr_sb will
+                //   // be present at index location 1 & 2
+                //   cntr = cntr + 1;
+                //   console.log('cntr= ' + cntr);
+                // }
+
+            }
+            document.getElementById('out').innerHTML = lines_str
+        };
+        // start reading the file. When it is done, calls the onload event defined above.
+        reader.readAsBinaryString(fileInput.files[0]);
+    };
+
+fileInput.addEventListener('change', readFile);
+
+// function arrayToTable(tableData) {
+//     var table = $('<table></table>');
+//     $(tableData).each(function (i, rowData) {
+//         var row = $('<tr></tr>');
+//         $(rowData).each(function (j, cellData) {
+//             row.append($('<td>'+cellData+'</td>'));
+//         });
+//         table.append(row);
+//     });
+//     return table;
+// }
+//
+// $.ajax({
+//     type: "GET",
+//     //url: "http://localhost:8000/MOCK_DATA.csv",
+//     url: dataURL,
+//     success: function (data) {
+//         $('body').append(arrayToTable(Papa.parse(data).data));
+//     }
+// });
+
+var algdx = (
+  DxsterCalcModule.calculate(
+    //document.getElementById("CDR_sb").value,
+    //document.getElementById("NPDx").value
+  )
+)
+</script>
+
+</html>
