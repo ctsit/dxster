@@ -9,7 +9,7 @@
 ```
 # dxster
 
-[![DOI](https://zenodo.org/badge/4064/ctsit/dxster.svg)](https://zenodo.org/badge/latestdoi/4064/ctsit/dxster)
+[![DOI](https://zenodo.org/badge/63183236.svg)](https://zenodo.org/badge/latestdoi/63183236)
 
 DxSter, the Alzheimer's Algorithmic Diagnostic Helper.
 
