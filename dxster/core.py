@@ -24,15 +24,9 @@ limitations under the License.
 
 """
 
-def get_hmm():
-    """Get a thought."""
-    return 'hmmm...'
 
-def hmm():
-    """Contemplation..."""
-    print get_hmm()
 
-# create a test calc function.
+# create a calc function.
 def calc_dxster(CDR_sb, NPDx):
     """
 +--------+---------------------+---------------+-------------+-------------+----------------------+
