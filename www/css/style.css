@@ -252,6 +252,65 @@ footer.page-footer {
 	border: black 1pt solid;
 }
 
+.file_upload {
+    position: relative;
+    overflow: hidden;
+}
+
+.inputfile-btn {
+    font-size: 1.25em;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: #834499;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.inputfile-btn:focus,
+.inputfile-btn:hover {
+        background-color: rgb(102, 8, 135);
+}
+
+.file_upload input.upload {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/*table*/
+#upload_table {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 13px;
+	margin-bottom: 45px;
+    max-width: 550px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+#upload_table th {
+	font-size: 14px;
+	font-weight: normal;
+	color: #302f2f;
+    padding: 10px 8px;
+    border-bottom: 2px solid #8c8989;
+}
+
+#upload_table td {
+	border-bottom: 1px solid #ccc;
+	padding: 10px;
+}
+
 
 /*Query for iphone6 screen*/
 @media only screen and (min-width: 375px) {

@@ -75,14 +75,56 @@ output {
         <h2>Test out your own data in the DxSter Uploader!</h2>
 
         <h5>Select local CSV File:</h5>
-        <p>Data input should be structured with these 4 columns: subject_id, npdx, cdr_sb, and undefined. Download an example dataset <a href="../examples/bash/sample_data.csv">here</a>.</p>
+        <p>Data input should be structured with these 3 columns: subject_id, npdx, and cdr_sb. Download an example dataset <a href="../examples/bash/sample_data.csv">here</a>.</p>
         <div class="input_box">
-            <input id="csv" type="file">
+            <div class="file_upload inputfile-btn">
+                <span>Choose a file</span>
+                <input id="csv" type="file" name="file" class="upload" data-multiple-caption="{count} files selected" multiple/>
+            </div>
         </div>
+
+        
 
         <output id="out">
             file contents will appear here
         </output>
+
+        <table id="upload_table">
+            <thead>
+                <tr>
+                    <th scope="col">subject_id</th>
+                    <th scope="col">npdx</th>
+                    <th scope="col">cdr_sb</th>
+                    <th scope="col">AlgDx</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>normal</td>
+                    <td>0</td>
+                    <td>Normal</td>
+                </tr>
+                <tr>
+                    <td>132</td>
+                    <td>emci</td>
+                    <td>4.5</td>
+                    <td>Dementia</td>
+                </tr>
+                <tr>
+                    <td>112</td>
+                    <td>premci</td>
+                    <td>0</td>
+                    <td>PreMCI - NP</td>
+                </tr>
+                <tr>
+                    <td>110</td>
+                    <td>normal</td>
+                    <td>4.5</td>
+                    <td>Consensus Conference</td>
+                </tr>
+            </tbody>
+        </table>
 
         <a class="waves-effect waves-light print-btn btn"><i class="material-icons right">print</i>Print Results</a>
       </div>
@@ -202,6 +244,29 @@ var algdx = (
     //document.getElementById("NPDx").value
   )
 )
+</script>
+
+<script>
+var inputs = document.querySelectorAll( '.upload' );
+Array.prototype.forEach.call( inputs, function( input )
+{
+    var label    = input.nextElementSibling,
+        labelVal = label.innerHTML;
+
+    input.addEventListener( 'change', function( e )
+    {
+        var fileName = '';
+        if( this.files && this.files.length > 1 )
+            fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+        else
+            fileName = e.target.value.split( '\\' ).pop();
+
+        if( fileName )
+            label.querySelector( 'span' ).innerHTML = fileName;
+        else
+            label.innerHTML = labelVal;
+    });
+});
 </script>
 
 </html>
